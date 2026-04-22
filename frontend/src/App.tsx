@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import CoursesPage from './pages/CoursesPage'
-import CourseDetailPage from './pages/CourseDetailPage'
-import ExamPage from './pages/ExamPage'
-import SettingsPage from './pages/SettingsPage'
+import Courses from './pages/Courses'
+import CourseDetail from './pages/CourseDetail'
+import Exam from './pages/Exam'
+import Settings from './pages/Settings'
 import Sidebar from './components/Sidebar'
 
 export default function App() {
@@ -13,10 +13,10 @@ export default function App() {
         <main className="flex-1 overflow-auto bg-gray-50 p-8">
           <Routes>
             <Route path="/" element={<Navigate to="/courses" replace />} />
-            <Route path="/courses" element={<CoursesPage />} />
-            <Route path="/courses/:courseId" element={<CourseDetailPage />} />
-            <Route path="/courses/:courseId/exam" element={<ExamPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/courses/:courseId" element={<CourseDetail />} />
+            <Route path="/courses/:courseId/exam" element={<Exam />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
       </div>
