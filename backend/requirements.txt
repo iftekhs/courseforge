@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pywebview
+peewee
+pydantic-settings
+python-dotenv
+anthropic
+google-generativeai
+httpx
