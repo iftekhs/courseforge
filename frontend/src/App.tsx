@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Courses from './pages/Courses'
-import CourseDetail from './pages/Courses/course'
-import Exam from './pages/Exam'
-import Settings from './pages/Settings'
+import Courses from './pages/courses'
+import CourseDetail from './pages/courses/course'
+import Exam from './pages/exam'
+import Settings from './pages/settings'
 import Sidebar from './components/Sidebar'
 
 export default function App() {
