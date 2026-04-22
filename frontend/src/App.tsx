@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Courses from './pages/Courses'
-import CourseDetail from './pages/CourseDetail'
+import CourseDetail from './pages/Courses/CourseDetail'
 import Exam from './pages/Exam'
 import Settings from './pages/Settings'
 import Sidebar from './components/Sidebar'
