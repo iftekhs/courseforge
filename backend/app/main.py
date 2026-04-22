@@ -1,10 +1,11 @@
+import subprocess
 import threading
+import time
 from pathlib import Path
 
 import uvicorn
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse
 
 from app.api.router import api_router
 from app.config import get_settings
@@ -16,18 +17,15 @@ def create_api_app() -> FastAPI:
     return app
 
 
-def create_frontend_app() -> FastAPI:
-    app = FastAPI(title="CourseForge")
-
-    frontend_path = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
-    if frontend_path.exists():
-        app.mount("/", StaticFiles(directory=str(frontend_path), html=True), name="static")
-
-    @app.get("/")
-    async def root():
-        return HTMLResponse(content=open(frontend_path / "index.html").read())
-
-    return app
+def start_vite_dev_server():
+    """Start Vite dev server in background."""
+    frontend_dir = Path(__file__).resolve().parent.parent.parent / "frontend"
+    subprocess.Popen(
+        ["npm", "run", "dev"],
+        cwd=str(frontend_dir),
+        shell=True
+    )
+    time.sleep(3)
 
 
 def run_server(port: int, app: FastAPI = None, host: str = "127.0.0.1"):
@@ -39,14 +37,12 @@ def run_server(port: int, app: FastAPI = None, host: str = "127.0.0.1"):
 def main():
     settings = get_settings()
 
+    start_vite_dev_server()
+
     api_app = create_api_app()
-    frontend_app = create_frontend_app()
 
     api_thread = threading.Thread(target=lambda p=8000, a=api_app: run_server(p, a), daemon=True)
-    frontend_thread = threading.Thread(target=lambda p=5173, a=frontend_app: run_server(p, a), daemon=True)
-
     api_thread.start()
-    frontend_thread.start()
 
     import webview
 

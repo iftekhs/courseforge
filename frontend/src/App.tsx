@@ -1,25 +1,13 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Courses from './pages/courses'
-import CourseDetail from './pages/courses/course'
-import Exam from './pages/exam'
-import Settings from './pages/settings'
-import Sidebar from './components/Sidebar'
+import { useState } from 'react';
 
-export default function App() {
+function App() {
+  const [count, setCount] = useState(0);
+
   return (
-    <BrowserRouter>
-      <div className="flex h-screen w-screen overflow-hidden">
-        <Sidebar />
-        <main className="flex-1 overflow-auto bg-gray-50 p-8">
-          <Routes>
-            <Route path="/" element={<Navigate to="/courses" replace />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/courses/:courseId" element={<CourseDetail />} />
-            <Route path="/courses/:courseId/exam" element={<Exam />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </main>
-      </div>
-    </BrowserRouter>
-  )
+    <>
+      <section className="">CourseForge</section>
+    </>
+  );
 }
+
+export default App;
