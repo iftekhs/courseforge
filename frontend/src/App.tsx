@@ -1,14 +1,15 @@
-import { Button } from './components/ui/button';
-import { HugeiconsIcon } from '@hugeicons/react';
-import { ArrowUpIcon } from '@hugeicons/core-free-icons';
+import { AppSidebar } from './components/app-sidebar';
+import { SidebarProvider } from './components/ui/sidebar';
+import { TooltipProvider } from './components/ui/tooltip';
 function App() {
   return (
     <>
       <section className="">
-        <Button>
-          Button
-          <HugeiconsIcon icon={ArrowUpIcon} />
-        </Button>
+        <SidebarProvider>
+          <TooltipProvider>
+            <AppSidebar />
+          </TooltipProvider>
+        </SidebarProvider>
       </section>
     </>
   );
