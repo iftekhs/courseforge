@@ -20,6 +20,7 @@ import CoursePlayPage from './pages/courses/[id]/play/page';
 import SettingsPage from './pages/settings/page';
 import { TreeStateProvider } from './pages/courses/[id]/components/course-tree-context';
 import { getBreadcrumbs } from './lib/breadcrumbs';
+import { ThemeToggle } from './components/theme-toggle';
 
 function Breadcrumbs() {
   const location = useLocation();
@@ -59,6 +60,9 @@ function AppLayout() {
             <SidebarTrigger className="-ml-1" />
             <Separator orientation="vertical" className="mr-2 data-[orientation=vertical]:h-6" />
             <Breadcrumbs />
+          </div>
+          <div className="ml-auto mr-4">
+            <ThemeToggle />
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">

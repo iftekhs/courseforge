@@ -18,13 +18,6 @@ const CheckmarkIcon = () => (
   </svg>
 );
 
-const HalfCircleIcon = () => (
-  <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none">
-    <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M8 2C8 2 8 2 8 8C8 11 5 14 3 14" stroke="#3B82F6" fill="#3B82F6" strokeWidth="3" />
-  </svg>
-);
-
 const HollowCircleIcon = () => (
   <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none">
     <circle cx="8" cy="8" r="7" stroke="#9CA3AF" strokeWidth="1.5" fill="none" className="group-hover:fill-green-500/10 transition-colors" />
@@ -61,7 +54,6 @@ export function CourseTree({ node, onPlay, level = 0 }: TreeNodeProps) {
 
   if (node.type === 'video') {
     const completed = lessonState === 'completed';
-    const inProgress = lessonState === 'in_progress';
 
     return (
       <div
@@ -75,8 +67,6 @@ export function CourseTree({ node, onPlay, level = 0 }: TreeNodeProps) {
         >
           {completed ? (
             <CheckmarkIcon />
-          ) : inProgress ? (
-            <HalfCircleIcon />
           ) : (
             <HollowCircleIcon />
           )}
