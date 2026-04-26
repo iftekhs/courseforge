@@ -15,6 +15,8 @@ import {
 import { Separator } from './components/ui/separator';
 import { Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import CoursesPage from './pages/courses/page';
+import CourseDetailsPage from './pages/courses/[id]/page';
+import CoursePlayPage from './pages/courses/[id]/play/page';
 import SettingsPage from './pages/settings/page';
 import { getBreadcrumbs } from './lib/breadcrumbs';
 
@@ -78,6 +80,8 @@ function App() {
             }
           />
           <Route path="courses" element={<CoursesPage />} />
+          <Route path="courses/:courseId" element={<CourseDetailsPage />} />
+          <Route path="courses/:courseId/play" element={<CoursePlayPage />} />
           <Route path="settings" element={<SettingsPage />} />
         </Route>
       </Routes>
