@@ -94,7 +94,7 @@ export default function CoursesPage() {
       </div>
       <div className="flex justify-end mb-4">
         <Button onClick={handleAddCourse} disabled={isAdding}>
-          <HugeiconsIcon icon={AddIcon} className="h-4 w-4 mr-2" />
+          <HugeiconsIcon icon={AddIcon} className="h-4 w-4" />
           {isAdding ? 'Adding...' : 'Add Course'}
         </Button>
       </div>

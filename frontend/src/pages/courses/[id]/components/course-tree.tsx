@@ -1,10 +1,13 @@
-import { useState } from 'react';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { FolderIcon, VideoIcon, ChevronDown, ChevronRight } from '@hugeicons/core-free-icons';
+import { FolderIcon, VideoIcon, ChevronDown, ChevronRight, CheckmarkCircle01Icon } from '@hugeicons/core-free-icons';
+import { useTreeState } from './course-tree-context';
+import { useLessonProgress } from '../../hooks/use-lesson-progress';
 
 interface TreeNode {
+  id: string;
   name: string;
-  path: string;
+  path?: string;
+  relative_path?: string;
   type: 'directory' | 'video';
   children: TreeNode[];
 }
@@ -12,32 +15,36 @@ interface TreeNode {
 interface CourseTreeProps {
   node: TreeNode;
   rootPath: string;
-  onPlay?: (fullPath: string) => void;
+  onPlay?: (fullPath: string, lessonId: string) => void;
   onNavigate?: (fullPath: string) => void;
   level?: number;
 }
 
 export function CourseTree({ node, rootPath, onPlay, onNavigate, level = 0 }: CourseTreeProps) {
-  const [isExpanded, setIsExpanded] = useState(level < 1);
+  const { isNodeCollapsed, toggleNode } = useTreeState();
+  const { isLessonCompleted } = useLessonProgress();
 
   const hasChildren = node.children && node.children.length > 0;
+  const isExpanded = !isNodeCollapsed(node.id);
+  const isCompleted = node.type === 'video' ? isLessonCompleted(node.id || `fallback-${node.name}`) : false;
 
   const handleToggle = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setIsExpanded(!isExpanded);
+    toggleNode(node.id);
   };
 
   const getFullPath = (n: TreeNode): string => {
-    if (n.path && (n.path.startsWith('D:') || n.path.startsWith('/') || n.path.includes(':'))) {
-      return n.path;
+    const pathField = n.relative_path || n.path || '';
+    if (pathField && (pathField.startsWith('D:') || pathField.startsWith('/') || pathField.includes(':'))) {
+      return pathField;
     }
-    return rootPath + '/' + n.path;
+    return rootPath + '/' + pathField;
   };
 
   const handlePlay = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (onPlay && node.type === 'video') {
-      onPlay(getFullPath(node));
+      onPlay(getFullPath(node), node.id);
     }
   };
 
@@ -48,7 +55,10 @@ export function CourseTree({ node, rootPath, onPlay, onNavigate, level = 0 }: Co
         style={{ marginLeft: level * 20 }}
         onClick={handlePlay}
       >
-        <HugeiconsIcon icon={VideoIcon} className="h-4 w-4 text-indigo-500 shrink-0" />
+        <HugeiconsIcon
+          icon={isCompleted ? CheckmarkCircle01Icon : VideoIcon}
+          className={`h-4 w-4 shrink-0 ${isCompleted ? 'text-green-500' : 'text-indigo-500'}`}
+        />
         <span className="text-sm truncate flex-1">{node.name}</span>
         <button
           className="opacity-0 group-hover:opacity-100 p-1 hover:bg-accent rounded transition-opacity"
@@ -88,7 +98,7 @@ export function CourseTree({ node, rootPath, onPlay, onNavigate, level = 0 }: Co
         <div>
           {node.children.map((child, index) => (
             <CourseTree
-              key={`${child.path}-${index}`}
+              key={`${child.relative_path || child.path || index}-${index}`}
               node={child}
               rootPath={rootPath}
               onPlay={onPlay}

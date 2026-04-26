@@ -69,3 +69,4 @@ htmlcov/
 # Ruff/Black
 .ruff_cache/
 .mypy_cache/
+todo.md

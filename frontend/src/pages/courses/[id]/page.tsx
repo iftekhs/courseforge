@@ -7,14 +7,20 @@ import { CourseTree } from './components/course-tree';
 import { useCourses } from '../hooks/use-courses-api';
 import type { Course } from '../hooks/use-courses-api';
 import { usePreferences } from '../../settings/hooks/use-preferences';
+import { useTreeState } from './components/course-tree-context';
 
 export default function CourseDetailsPage() {
   const { courseId } = useParams();
   const navigate = useNavigate();
   const { getCourse } = useCourses();
   const { preferExternal } = usePreferences();
+  const { setCourseId } = useTreeState();
   const [course, setCourse] = useState<Course | null>(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setCourseId(courseId || null);
+  }, [courseId, setCourseId]);
 
   useEffect(() => {
     let cancelled = false;
@@ -34,14 +40,14 @@ export default function CourseDetailsPage() {
     return () => { cancelled = true; };
   }, [courseId]);
 
-  const handlePlay = (fullPath: string) => {
+  const handlePlay = (fullPath: string, lessonId: string) => {
     if (preferExternal) {
       const w = window as any;
       if (w.pywebview?.api) {
         w.pywebview.api.open_in_system_player(fullPath);
       }
     } else {
-      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(fullPath)}`);
+      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(fullPath)}&lessonId=${lessonId}`);
     }
   };
 

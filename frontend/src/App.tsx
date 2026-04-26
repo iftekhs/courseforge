@@ -18,6 +18,7 @@ import CoursesPage from './pages/courses/page';
 import CourseDetailsPage from './pages/courses/[id]/page';
 import CoursePlayPage from './pages/courses/[id]/play/page';
 import SettingsPage from './pages/settings/page';
+import { TreeStateProvider } from './pages/courses/[id]/components/course-tree-context';
 import { getBreadcrumbs } from './lib/breadcrumbs';
 
 function Breadcrumbs() {
@@ -61,7 +62,9 @@ function AppLayout() {
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <Outlet />
+          <TreeStateProvider>
+            <Outlet />
+          </TreeStateProvider>
         </div>
       </SidebarInset>
     </SidebarProvider>

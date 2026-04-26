@@ -1,6 +1,10 @@
+import { useCallback } from 'react';
+
 export interface TreeNode {
+  id: string;
   name: string;
-  path: string;
+  path?: string;
+  relative_path?: string;
   type: 'directory' | 'video';
   children: TreeNode[];
 }
@@ -21,13 +25,13 @@ export function getFullPath(rootPath: string, relativePath: string): string {
   if (!relativePath || relativePath === '.') {
     return rootPath;
   }
-  let cleanPath = relativePath
+  const cleanPath = relativePath
     .replace(/^\.\//, '')
     .replace(/^\/+/, '')
     .replace(/^\\+/, '');
-  
+
   rootPath = rootPath.replace(/\\/g, '/');
-  
+
   if (rootPath.endsWith('/')) {
     return rootPath + cleanPath;
   }
@@ -63,7 +67,7 @@ function getApi() {
 }
 
 export function useCourses() {
-  const getCourses = (): CourseSummary[] => {
+  const getCourses = useCallback(() => {
     try {
       const api = getApi();
       return api.get_courses() || [];
@@ -71,9 +75,22 @@ export function useCourses() {
       console.warn('pywebview API not available');
       return [];
     }
-  };
+  }, []);
 
-  const addCourse = async (folderPath: string): Promise<CourseSummary | null> => {
+  const getCourse = useCallback(async (id: string): Promise<Course | null> => {
+    try {
+      const api = getApi();
+      const result = await api.get_course(id);
+      if ('error' in result) {
+        return null;
+      }
+      return result as Course;
+    } catch {
+      return null;
+    }
+  }, []);
+
+  const addCourse = useCallback(async (folderPath: string): Promise<CourseSummary | null> => {
     try {
       const api = getApi();
       const result = await api.add_course(folderPath);
@@ -86,50 +103,37 @@ export function useCourses() {
       console.error('Error adding course:', err);
       return null;
     }
-  };
+  }, []);
 
-  const getCourse = async (id: string): Promise<Course | null> => {
-    try {
-      const api = getApi();
-      const result = await api.get_course(id);
-      if ('error' in result) {
-        return null;
-      }
-      return result as Course;
-    } catch {
-      return null;
-    }
-  };
-
-  const removeCourse = async (id: string): Promise<boolean> => {
+  const removeCourse = useCallback(async (id: string): Promise<boolean> => {
     try {
       const api = getApi();
       return await api.remove_course(id);
     } catch {
       return false;
     }
-  };
+  }, []);
 
-  const getVideoUrl = (_rootPath: string, _relativePath: string): string => {
+  const getVideoUrl = useCallback(() => {
     return '';
-  };
+  }, []);
 
-  const openInSystemPlayer = (_rootPath: string, _relativePath: string): void => {
-  };
+  const openInSystemPlayer = useCallback(() => {
+  }, []);
 
-  const refreshPage = (): void => {
+  const refreshPage = useCallback(() => {
     try {
       const api = getApi();
       api.refresh_page();
     } catch {
       window.location.reload();
     }
-  };
+  }, []);
 
   return {
     getCourses,
-    addCourse,
     getCourse,
+    addCourse,
     removeCourse,
     getVideoUrl,
     openInSystemPlayer,
