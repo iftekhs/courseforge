@@ -87,11 +87,11 @@ def _has_videos(tree: TreeNode) -> bool:
 
 def scan_folder(root_path: Path) -> TreeNode:
     root_str = str(root_path.resolve())
-    node_id = str(uuid.uuid4())
+    node_id = hash(root_str)  # Stable ID based on path
 
     if root_path.is_file():
         return TreeNode(
-            id=node_id,
+            id=str(node_id),
             name=root_path.name,
             path=root_str,
             type="video"
@@ -106,7 +106,7 @@ def scan_folder(root_path: Path) -> TreeNode:
                 children.append(child)
         elif item.suffix.lower() in VIDEO_EXTENSIONS:
             children.append(TreeNode(
-                id=str(uuid.uuid4()),
+                id=str(hash(item_str)),
                 name=item.name,
                 path=item_str,
                 type="video"

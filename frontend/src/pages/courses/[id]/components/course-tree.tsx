@@ -1,32 +1,44 @@
-import { memo } from 'react';
+import { useMemo } from 'react';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { FolderIcon, VideoIcon, ChevronDown, ChevronRight, CheckmarkCircle01Icon } from '@hugeicons/core-free-icons';
+import { FolderIcon, ChevronDown, ChevronRight, CheckmarkCircle01Icon } from '@hugeicons/core-free-icons';
 import { useTreeState } from './course-tree-context';
-import { useLessonProgress } from '../../hooks/use-lesson-progress';
+import { useProgress } from './progress-context';
+import type { TreeNode } from '../../hooks/use-courses-api';
 
-interface TreeNode {
-  id: string;
-  name: string;
-  path: string;
-  type: 'directory' | 'video';
-  children: TreeNode[];
-}
-
-interface CourseTreeProps {
+interface TreeNodeProps {
   node: TreeNode;
   onPlay?: (fullPath: string, lessonId: string) => void;
-  onNavigate?: (fullPath: string) => void;
   level?: number;
 }
 
-export const CourseTree = memo(function CourseTree({ node, onPlay, onNavigate, level = 0 }: CourseTreeProps) {
+const CheckmarkIcon = () => (
+  <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none">
+    <circle cx="8" cy="8" r="7" fill="#1D9E75" />
+    <path d="M4.5 8L7 10.5L11.5 5.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const HalfCircleIcon = () => (
+  <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none">
+    <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
+    <path d="M8 2C8 2 8 2 8 8C8 11 5 14 3 14" stroke="#3B82F6" fill="#3B82F6" strokeWidth="3" />
+  </svg>
+);
+
+const HollowCircleIcon = () => (
+  <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none">
+    <circle cx="8" cy="8" r="7" stroke="#9CA3AF" strokeWidth="1.5" fill="none" className="group-hover:fill-green-500/10 transition-colors" />
+  </svg>
+);
+
+export function CourseTree({ node, onPlay, level = 0 }: TreeNodeProps) {
   const { isNodeExpanded, toggleNode } = useTreeState();
-  const { isLessonCompleted } = useLessonProgress();
+  const { getLessonState, toggleLessonComplete, getFolderCount } = useProgress();
 
   const hasChildren = node.children && node.children.length > 0;
   const nodeId = node.id || '';
   const isExpanded = isNodeExpanded(nodeId);
-  const isCompleted = node.type === 'video' ? isLessonCompleted(node.id) : false;
+  const lessonState = node.type === 'video' ? getLessonState(node.path) : null;
 
   const handleToggle = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -40,27 +52,43 @@ export const CourseTree = memo(function CourseTree({ node, onPlay, onNavigate, l
     }
   };
 
+  const handleIconClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (node.type === 'video') {
+      toggleLessonComplete(node.path);
+    }
+  };
+
   if (node.type === 'video') {
+    const completed = lessonState === 'completed';
+    const inProgress = lessonState === 'in_progress';
+
     return (
       <div
         className="flex items-center gap-2 py-2 px-3 rounded-lg hover:bg-muted/50 cursor-pointer group"
         style={{ marginLeft: level * 20 }}
         onClick={handlePlay}
       >
-        <HugeiconsIcon
-          icon={isCompleted ? CheckmarkCircle01Icon : VideoIcon}
-          className={`h-4 w-4 shrink-0 ${isCompleted ? 'text-green-500' : 'text-indigo-500'}`}
-        />
-        <span className="text-sm truncate flex-1">{node.name}</span>
         <button
-          className="opacity-0 group-hover:opacity-100 p-1 hover:bg-accent rounded transition-opacity"
-          onClick={handlePlay}
+          className="h-4 w-4 shrink-0 flex items-center justify-center"
+          onClick={handleIconClick}
         >
-          <HugeiconsIcon icon={VideoIcon} className="h-4 w-4" />
+          {completed ? (
+            <CheckmarkIcon />
+          ) : inProgress ? (
+            <HalfCircleIcon />
+          ) : (
+            <HollowCircleIcon />
+          )}
         </button>
+        <span className="text-sm truncate flex-1">{node.name}</span>
       </div>
     );
   }
+
+  const folderCount = getFolderCount(node.id, node);
+  const percent = folderCount.total > 0 ? Math.round((folderCount.completed / folderCount.total) * 100) : 0;
+  const isDone = folderCount.completed === folderCount.total && folderCount.total > 0;
 
   return (
     <div>
@@ -80,11 +108,26 @@ export const CourseTree = memo(function CourseTree({ node, onPlay, onNavigate, l
             />
           )}
         </button>
-        <HugeiconsIcon icon={FolderIcon} className="h-4 w-4 text-slate-500 shrink-0" />
-        <span className="text-sm font-medium truncate">{node.name}</span>
-        <span className="text-xs text-muted-foreground">
-          ({node.children.length})
-        </span>
+        {isDone ? (
+          <CheckmarkIcon />
+        ) : (
+          <HugeiconsIcon icon={FolderIcon} className="h-4 w-4 text-slate-500 shrink-0" />
+        )}
+        <span className="text-sm font-medium truncate flex-1">{node.name}</span>
+        
+        {folderCount.total > 0 && (
+          <div className={`text-xs px-2 py-0.5 rounded-full ${isDone ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+            <span>{folderCount.completed}</span>
+            <span className="mx-1">/</span>
+            <span>{folderCount.total}</span>
+            <span className="mx-1">•</span>
+            {isDone ? (
+              <span className="text-green-600">100%</span>
+            ) : (
+              <span>{percent}%</span>
+            )}
+          </div>
+        )}
       </div>
       {hasChildren && isExpanded && (
         <div>
@@ -93,7 +136,6 @@ export const CourseTree = memo(function CourseTree({ node, onPlay, onNavigate, l
               key={child.id || child.path || index}
               node={child}
               onPlay={onPlay}
-              onNavigate={onNavigate}
               level={level + 1}
             />
           ))}
@@ -101,4 +143,4 @@ export const CourseTree = memo(function CourseTree({ node, onPlay, onNavigate, l
       )}
     </div>
   );
-});
+}

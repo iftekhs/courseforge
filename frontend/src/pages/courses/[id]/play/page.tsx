@@ -32,7 +32,6 @@ export default function CoursePlayPage() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const { preferExternal } = usePreferences();
-  const { isLessonCompleted, markLessonCompleted } = useLessonProgress();
   const { getCourse } = useCourses();
 
   const rawPath = searchParams.get('path') || '';
@@ -43,14 +42,27 @@ export default function CoursePlayPage() {
     return idFromUrl || path;
   }, [searchParams, path]);
 
-  const isCompleted = lessonId ? isLessonCompleted(lessonId) : false;
-
+  const [course, setCourse] = useState<{ root_path: string } | null>(null);
   const [videoSrc, setVideoSrc] = useState('');
   const [loading, setLoading] = useState(true);
   const [lessonTitle, setLessonTitle] = useState('');
   const [lessons, setLessons] = useState<FlatLesson[]>([]);
   const [prevLesson, setPrevLesson] = useState<FlatLesson | null>(null);
   const [nextLesson, setNextLesson] = useState<FlatLesson | null>(null);
+
+  useEffect(() => {
+    if (!courseId) return;
+    getCourse(courseId).then(data => {
+      if (data) setCourse(data);
+    });
+  }, [courseId]);
+
+  const { isLessonCompleted, markLessonInProgress, toggleLessonComplete, isLessonInProgress } = useLessonProgress(
+    course?.root_path || ''
+  );
+
+  const isCompleted = path ? isLessonCompleted(path) : false;
+  const inProgress = path ? isLessonInProgress(path) : false;
 
   useEffect(() => {
     if (!path) return;
@@ -63,12 +75,12 @@ export default function CoursePlayPage() {
   }, [path]);
 
   useEffect(() => {
-    if (!courseId) return;
+    if (!courseId || !course) return;
 
     const loadLessons = async () => {
-      const course = await getCourse(courseId);
-      if (course?.tree) {
-        const allLessons = flattenTree(course.tree);
+      const courseData = await getCourse(courseId);
+      if (courseData?.tree) {
+        const allLessons = flattenTree(courseData.tree);
         setLessons(allLessons);
 
         const currentIndex = allLessons.findIndex(l => l.id === lessonId || l.path === path);
@@ -77,7 +89,13 @@ export default function CoursePlayPage() {
       }
     };
     loadLessons();
-  }, [courseId, path]);
+  }, [courseId, path, course]);
+
+  useEffect(() => {
+    if (path && course?.root_path && !inProgress && !isCompleted) {
+      markLessonInProgress(path);
+    }
+  }, [path, course?.root_path, inProgress, isCompleted]);
 
   const handleOpenExternal = () => {
     const w = window as any;
@@ -87,8 +105,8 @@ export default function CoursePlayPage() {
   };
 
   const handleMarkCompleted = () => {
-    if (lessonId) {
-      markLessonCompleted(lessonId);
+    if (path) {
+      toggleLessonComplete(path);
     }
   };
 
@@ -148,7 +166,7 @@ export default function CoursePlayPage() {
                 Open in System Player
               </Button>
             )}
-            {lessonId && (
+            {path && (
               <Button
                 variant={isCompleted ? "default" : "outline"}
                 onClick={handleMarkCompleted}
