@@ -23,27 +23,6 @@ print(f"[API] Data file: {DATA_FILE}")
 _window: Optional[any] = None
 
 
-def _get_full_path(root_path: str, relative_path: str) -> str:
-    if not relative_path or relative_path == ".":
-        return root_path
-    return str(Path(root_path) / relative_path)
-
-
-def _load_courses() -> list[dict]:
-    if not DATA_FILE.exists():
-        return []
-    try:
-        with open(DATA_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return []
-
-
-def _save_courses(courses: list[dict]):
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(courses, f, indent=2)
-
-
 def _load_courses() -> list[dict]:
     if not DATA_FILE.exists():
         print("[DATA] File does not exist")
@@ -56,6 +35,11 @@ def _load_courses() -> list[dict]:
     except Exception as e:
         print(f"[DATA] Error loading: {e}")
         return []
+
+
+def _save_courses(courses: list[dict]):
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(courses, f, indent=2)
 
 
 def _get_course_summary(course_dict: dict) -> dict:

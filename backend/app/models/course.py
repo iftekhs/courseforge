@@ -1,7 +1,6 @@
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, field
 from typing import Literal
 from pathlib import Path
-import os
 import uuid
 
 VIDEO_EXTENSIONS = {'.mp4', '.mkv', '.mov', '.avi', '.webm'}
@@ -11,7 +10,7 @@ VIDEO_EXTENSIONS = {'.mp4', '.mkv', '.mov', '.avi', '.webm'}
 class TreeNode:
     id: str
     name: str
-    relative_path: str
+    path: str
     type: Literal["directory", "video"]
     children: list["TreeNode"] = field(default_factory=list)
 
@@ -19,8 +18,7 @@ class TreeNode:
         return {
             "id": self.id,
             "name": self.name,
-            "path": self.relative_path,
-            "relative_path": self.relative_path,
+            "path": self.path,
             "type": self.type,
             "children": [c.to_dict() for c in self.children]
         }
@@ -48,7 +46,7 @@ class Course:
         tree = TreeNode(
             id=data["tree"].get("id", str(uuid.uuid4())),
             name=data["tree"]["name"],
-            relative_path=data["tree"].get("relative_path", ""),
+            path=data["tree"].get("path", ""),
             type=data["tree"]["type"],
             children=[]
         )
@@ -67,7 +65,7 @@ class Course:
             child = TreeNode(
                 id=child_data.get("id", str(uuid.uuid4())),
                 name=child_data["name"],
-                relative_path=child_data.get("relative_path", ""),
+                path=child_data.get("path", ""),
                 type=child_data["type"]
             )
             parent.children.append(child)
@@ -87,40 +85,37 @@ def _has_videos(tree: TreeNode) -> bool:
     return any(_has_videos(c) for c in tree.children)
 
 
-def scan_folder(root_path: Path, relative_to: str = "") -> TreeNode:
-    if relative_to == "":
-        relative_to = "."
-
+def scan_folder(root_path: Path) -> TreeNode:
+    root_str = str(root_path.resolve())
     node_id = str(uuid.uuid4())
 
     if root_path.is_file():
         return TreeNode(
             id=node_id,
             name=root_path.name,
-            relative_path=root_path.name,
+            path=root_str,
             type="video"
         )
 
     children = []
     for item in sorted(root_path.iterdir()):
+        item_str = str(item.resolve())
         if item.is_dir():
-            rel_name = item.name if relative_to == "." else f"{relative_to}/{item.name}"
-            child = scan_folder(item, rel_name)
+            child = scan_folder(item)
             if _has_videos(child):
                 children.append(child)
         elif item.suffix.lower() in VIDEO_EXTENSIONS:
-            rel_name = item.name if relative_to == "." else f"{relative_to}/{item.name}"
             children.append(TreeNode(
                 id=str(uuid.uuid4()),
                 name=item.name,
-                relative_path=rel_name,
+                path=item_str,
                 type="video"
             ))
 
     return TreeNode(
         id=node_id,
         name=root_path.name,
-        relative_path=relative_to,
+        path=root_str,
         type="directory",
         children=children
     )

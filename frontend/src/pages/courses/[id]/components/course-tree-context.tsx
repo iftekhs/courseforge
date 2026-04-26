@@ -1,9 +1,9 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from 'react';
 
 interface TreeStateContextType {
-  collapsedNodes: Set<string>;
+  expandedNodes: Record<string, boolean>;
   toggleNode: (nodeId: string) => void;
-  isNodeCollapsed: (nodeId: string) => boolean;
+  isNodeExpanded: (nodeId: string) => boolean;
   setCourseId: (id: string | null) => void;
 }
 
@@ -22,34 +22,41 @@ interface TreeStateProviderProps {
 }
 
 export function TreeStateProvider({ children }: TreeStateProviderProps) {
-  const [collapsedNodes, setCollapsedNodes] = useState<Set<string>>(new Set());
+  const [expandedNodes, setExpandedNodes] = useState<Record<string, boolean>>({});
   const [currentCourseId, setCurrentCourseId] = useState<string | null>(null);
 
   const toggleNode = useCallback((nodeId: string) => {
-    setCollapsedNodes(prev => {
-      const next = new Set(prev);
-      if (next.has(nodeId)) {
-        next.delete(nodeId);
+    if (!nodeId) return;
+    setExpandedNodes(prev => {
+      const next = { ...prev };
+      if (next[nodeId]) {
+        delete next[nodeId];
       } else {
-        next.add(nodeId);
+        next[nodeId] = true;
       }
       return next;
     });
   }, []);
 
-  const isNodeCollapsed = useCallback((nodeId: string) => {
-    return collapsedNodes.has(nodeId);
-  }, [collapsedNodes]);
+  const isNodeExpanded = useCallback((nodeId: string): boolean => {
+    if (!nodeId) return false;
+    return expandedNodes[nodeId] === true;
+  }, [expandedNodes]);
 
   const setCourseId = useCallback((id: string | null) => {
     if (id !== currentCourseId) {
-      setCollapsedNodes(new Set());
+      setExpandedNodes({});
       setCurrentCourseId(id);
     }
   }, [currentCourseId]);
 
+  const value = useMemo(
+    () => ({ expandedNodes, toggleNode, isNodeExpanded, setCourseId }),
+    [expandedNodes, toggleNode, isNodeExpanded, setCourseId]
+  );
+
   return (
-    <TreeStateContext.Provider value={{ collapsedNodes, toggleNode, isNodeCollapsed, setCourseId }}>
+    <TreeStateContext.Provider value={value}>
       {children}
     </TreeStateContext.Provider>
   );

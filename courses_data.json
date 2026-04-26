@@ -1,1737 +1,1737 @@
 [
   {
-    "id": "cc5ae5d8-7f9d-4e01-9e82-6a604bb9a655",
+    "id": "bbcca8b7-1ded-4f25-b761-fc1fddc83389",
     "name": "Udemy - JavaScript Algorithms and Data Structures Masterclass",
     "root_path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass",
-    "created_at": "2026-04-26T06:21:05.140576",
+    "created_at": "2026-04-26T06:58:38.198714",
     "tree": {
-      "id": "d7f510cd-7e9c-49df-8a7f-7f3d6734ea67",
+      "id": "5a18717f-8b26-4cbd-a027-1f61ab067322",
       "name": "Udemy - JavaScript Algorithms and Data Structures Masterclass",
-      "relative_path": ".",
+      "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass",
       "type": "directory",
       "children": [
         {
-          "id": "59e20619-fc38-4d2a-bbb6-b87f3dcbdb2f",
+          "id": "48c59044-819b-4704-a1f5-a8efb0226153",
           "name": "01 - Introduction",
-          "relative_path": "01 - Introduction",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\01 - Introduction",
           "type": "directory",
           "children": [
             {
-              "id": "dd257115-6e13-4a5d-a2d9-8abc89077bb6",
+              "id": "1d097a1c-70ff-480e-a1b9-0a9856f94595",
               "name": "001 Curriculum Walkthrough.mp4",
-              "relative_path": "01 - Introduction/001 Curriculum Walkthrough.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\01 - Introduction\\001 Curriculum Walkthrough.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "d0306e0b-3b04-4571-ae03-a68ccd118659",
+              "id": "2349d4a9-12c1-4b2f-b941-f9365904b6e8",
               "name": "003 What Order Should You Watch In.mp4",
-              "relative_path": "01 - Introduction/003 What Order Should You Watch In.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\01 - Introduction\\003 What Order Should You Watch In.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8d20fe67-3bc0-45c0-a0fb-7ffa55e9aa3d",
+              "id": "415e4b02-e55c-4d19-892d-b6e453cddc3b",
               "name": "004 How I'm Running My Code.mp4",
-              "relative_path": "01 - Introduction/004 How I'm Running My Code.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\01 - Introduction\\004 How I'm Running My Code.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "209a6e76-4a59-4f05-8c8e-d4461f7c3590",
+          "id": "17e9813c-15d1-440b-9312-6361e035c721",
           "name": "02 - Big O Notation",
-          "relative_path": "02 - Big O Notation",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation",
           "type": "directory",
           "children": [
             {
-              "id": "4eca9283-4f0c-4c0f-a70c-8f564e786747",
+              "id": "3d8054ea-8d8c-4bfe-bccb-520ce675e8de",
               "name": "001 Intro to Big O.mp4",
-              "relative_path": "02 - Big O Notation/001 Intro to Big O.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\001 Intro to Big O.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "122df87d-42de-47ca-a27b-c41744a80083",
+              "id": "91a7ea2f-e2f3-4a23-8494-fec86601e790",
               "name": "002 Timing Our Code.mp4",
-              "relative_path": "02 - Big O Notation/002 Timing Our Code.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\002 Timing Our Code.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "63c25667-9fb1-44e6-8fac-299a3393e153",
+              "id": "7d0d4c02-714e-40f1-afe9-b0d65c95ea84",
               "name": "003 Counting Operations.mp4",
-              "relative_path": "02 - Big O Notation/003 Counting Operations.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\003 Counting Operations.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a886afba-5647-42bc-b1ed-cd6d236b4643",
+              "id": "3169b95e-380a-44c8-a4fe-353ad77411ba",
               "name": "004 Visualizing Time Complexities.mp4",
-              "relative_path": "02 - Big O Notation/004 Visualizing Time Complexities.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\004 Visualizing Time Complexities.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c416400d-54a9-403a-b655-de524cd5b277",
+              "id": "d9be78b7-1bea-481c-92fc-1c2c23d1eb78",
               "name": "005 Official Intro to Big O.mp4",
-              "relative_path": "02 - Big O Notation/005 Official Intro to Big O.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\005 Official Intro to Big O.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "046a5521-2489-4dc3-8869-2a40279eb010",
+              "id": "bebae779-9273-43e7-8b7e-90780ab4ab3d",
               "name": "006 Simplifying Big O Expressions.mp4",
-              "relative_path": "02 - Big O Notation/006 Simplifying Big O Expressions.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\006 Simplifying Big O Expressions.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8f1a12f6-90fc-424c-b22d-f732fb789c80",
+              "id": "66d9f025-5740-4b0b-8cdf-bd42b98dc85f",
               "name": "009 Space Complexity.mp4",
-              "relative_path": "02 - Big O Notation/009 Space Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\009 Space Complexity.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "88b43d13-7b07-4fe2-ac37-9d4458b3340e",
+              "id": "87ee0103-d1c3-4e42-ad84-821c88784c18",
               "name": "011 Logs and Section Recap.mp4",
-              "relative_path": "02 - Big O Notation/011 Logs and Section Recap.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\02 - Big O Notation\\011 Logs and Section Recap.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "2011acea-9ecc-4591-9b1f-954ec2f65670",
+          "id": "fbefab4f-7caa-40c3-9a6c-f3ca3b5fbe19",
           "name": "03 - Analyzing Performance of Arrays and Objects",
-          "relative_path": "03 - Analyzing Performance of Arrays and Objects",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\03 - Analyzing Performance of Arrays and Objects",
           "type": "directory",
           "children": [
             {
-              "id": "6b35a1f6-7815-40c5-9cf2-528733983c84",
+              "id": "9e92be0d-a9b7-472d-bb48-1ab1db841922",
               "name": "002 Section Introduction.mp4",
-              "relative_path": "03 - Analyzing Performance of Arrays and Objects/002 Section Introduction.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\03 - Analyzing Performance of Arrays and Objects\\002 Section Introduction.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "4c82c198-23c6-4b28-8c68-2a3bfda20154",
+              "id": "40a36bab-b7c3-4bf0-88a4-0e774728388d",
               "name": "003 The BIG O of Objects.mp4",
-              "relative_path": "03 - Analyzing Performance of Arrays and Objects/003 The BIG O of Objects.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\03 - Analyzing Performance of Arrays and Objects\\003 The BIG O of Objects.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "418a9685-7a3c-4831-b604-dcd050573593",
+              "id": "0a78f252-ac2a-4106-9712-88686220b359",
               "name": "005 When are Arrays Slow.mp4",
-              "relative_path": "03 - Analyzing Performance of Arrays and Objects/005 When are Arrays Slow.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\03 - Analyzing Performance of Arrays and Objects\\005 When are Arrays Slow.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "34f7d6a6-3930-48a4-b20c-e6811f8754be",
+              "id": "2cd3b1a1-40f8-44af-91ca-c503344d53d5",
               "name": "006 Big O of Array Methods.mp4",
-              "relative_path": "03 - Analyzing Performance of Arrays and Objects/006 Big O of Array Methods.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\03 - Analyzing Performance of Arrays and Objects\\006 Big O of Array Methods.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "02b7970b-523b-4740-8051-dce460144c6c",
+          "id": "eb18f72f-2304-4755-a5d8-47933e6bce28",
           "name": "04 - Problem Solving Approach",
-          "relative_path": "04 - Problem Solving Approach",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach",
           "type": "directory",
           "children": [
             {
-              "id": "439c92bc-6255-4c4b-ae0a-b3caf49a1032",
+              "id": "e9aaa03e-5dca-48fe-a000-ec5b9bacd754",
               "name": "002 Introduction to Problem Solving.mp4",
-              "relative_path": "04 - Problem Solving Approach/002 Introduction to Problem Solving.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach\\002 Introduction to Problem Solving.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "48610a98-1c0b-41f3-a8ab-4cf17fde09f2",
+              "id": "08ead8fc-6c44-4caf-8911-76860d6cbda7",
               "name": "003 Step 1 Understand The Problem.mp4",
-              "relative_path": "04 - Problem Solving Approach/003 Step 1 Understand The Problem.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach\\003 Step 1 Understand The Problem.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "836ddcca-f88b-4fc2-9e18-1168ca529c4c",
+              "id": "95016c7c-4696-4b5f-8e38-2784158eb1ea",
               "name": "004 Step 2 Concrete Examples.mp4",
-              "relative_path": "04 - Problem Solving Approach/004 Step 2 Concrete Examples.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach\\004 Step 2 Concrete Examples.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "b658edb0-0240-44ae-8c79-526e2e55ec10",
+              "id": "c03d9030-c240-4012-9cf8-fe89a41fddc4",
               "name": "005 Step 3 Break It Down.mp4",
-              "relative_path": "04 - Problem Solving Approach/005 Step 3 Break It Down.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach\\005 Step 3 Break It Down.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "4e235ee4-47f5-4e14-b893-c45d5ef75090",
+              "id": "aee6d595-6803-4dee-acc4-1c78123d5cda",
               "name": "006 Step 4 Solve Or Simplify.mp4",
-              "relative_path": "04 - Problem Solving Approach/006 Step 4 Solve Or Simplify.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach\\006 Step 4 Solve Or Simplify.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "12d321d1-a493-4d7d-adf1-c82daeaba148",
+              "id": "3cce012c-94bf-4628-a81a-4171b9565056",
               "name": "007 Step 5 Look Back and Refactor.mp4",
-              "relative_path": "04 - Problem Solving Approach/007 Step 5 Look Back and Refactor.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach\\007 Step 5 Look Back and Refactor.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ff5e7e39-d639-41f7-9a1c-33970feb4662",
+              "id": "c5b21891-44a8-471a-9dad-77fe7d3b00ef",
               "name": "008 Recap and Interview Strategies.mp4",
-              "relative_path": "04 - Problem Solving Approach/008 Recap and Interview Strategies.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\04 - Problem Solving Approach\\008 Recap and Interview Strategies.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "54a4b30f-9347-4313-ae9b-7776bebd9faa",
+          "id": "400cea54-3ff3-4bd4-8a6b-053c7f391db0",
           "name": "05 - Problem Solving Patterns",
-          "relative_path": "05 - Problem Solving Patterns",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns",
           "type": "directory",
           "children": [
             {
-              "id": "d240eb07-37e6-4fd8-a5e0-d8bc4aba52f9",
+              "id": "603169a7-64fa-4196-aef5-b3a824903dec",
               "name": "002 Intro to Problem Solving Patterns.mp4",
-              "relative_path": "05 - Problem Solving Patterns/002 Intro to Problem Solving Patterns.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\002 Intro to Problem Solving Patterns.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "23dca21e-7068-4815-b375-852c64bde1fd",
+              "id": "871c193d-6b2b-462a-b0c8-79c4720d7856",
               "name": "003 Frequency Counter Pattern.mp4",
-              "relative_path": "05 - Problem Solving Patterns/003 Frequency Counter Pattern.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\003 Frequency Counter Pattern.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8c9db59b-93f9-4d9f-b0f9-3dc3e1f4602b",
+              "id": "19b045c3-518a-4b23-a4d0-2750c5f87938",
               "name": "004 Frequency Counter Anagram Challenge.mp4",
-              "relative_path": "05 - Problem Solving Patterns/004 Frequency Counter Anagram Challenge.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\004 Frequency Counter Anagram Challenge.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "20bb7c80-969d-4caa-b567-6e41cf0ef377",
+              "id": "eb7e9079-d7b3-4bab-9bbc-ae8ab61dfccc",
               "name": "006 Anagram Challenge Solution.mp4",
-              "relative_path": "05 - Problem Solving Patterns/006 Anagram Challenge Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\006 Anagram Challenge Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "4ab7ab54-d96c-46f8-b252-22ba37eff880",
+              "id": "2b7bffa2-e316-49c4-8a73-124abfa725f7",
               "name": "007 Multiple Pointers Pattern.mp4",
-              "relative_path": "05 - Problem Solving Patterns/007 Multiple Pointers Pattern.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\007 Multiple Pointers Pattern.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "10881505-a0db-48dc-8690-28d0c7a1c38a",
+              "id": "e1359c55-6e5e-4e67-9b5c-2afefc8b09c2",
               "name": "008 Multiple Pointers Count Unique Values Challenge.mp4",
-              "relative_path": "05 - Problem Solving Patterns/008 Multiple Pointers Count Unique Values Challenge.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\008 Multiple Pointers Count Unique Values Challenge.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "3994f3e4-c231-4e6f-bc2c-37b8f6a03ea8",
+              "id": "5192399c-1275-4740-b024-f8dcdc44fed6",
               "name": "010 Count Unique Values Solution.mp4",
-              "relative_path": "05 - Problem Solving Patterns/010 Count Unique Values Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\010 Count Unique Values Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c114098e-cd8d-4655-880f-bce72efa1b1b",
+              "id": "e923c996-7b6a-4b10-bd16-7eafb02599d7",
               "name": "011 Sliding Window Pattern.mp4",
-              "relative_path": "05 - Problem Solving Patterns/011 Sliding Window Pattern.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\011 Sliding Window Pattern.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "72909dc2-3e9c-45bb-91ac-90ba32fb1564",
+              "id": "2006a18c-69af-4b0d-87c1-9a3a8e7c1134",
               "name": "012 Divide And Conquer Pattern.mp4",
-              "relative_path": "05 - Problem Solving Patterns/012 Divide And Conquer Pattern.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\05 - Problem Solving Patterns\\012 Divide And Conquer Pattern.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "306f671f-b320-4563-90b7-2624ac7267ac",
+          "id": "ce4519a8-a51c-421f-a48a-9d0f849e5257",
           "name": "07 - Recursion",
-          "relative_path": "07 - Recursion",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion",
           "type": "directory",
           "children": [
             {
-              "id": "e8da9544-7edf-47cd-8367-bd3586417372",
+              "id": "ac170fde-f3ae-4462-92b8-ba5554b25c39",
               "name": "002 Story Time Martin & The Dragon.mp4",
-              "relative_path": "07 - Recursion/002 Story Time Martin & The Dragon.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\002 Story Time Martin & The Dragon.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "fe15b017-612e-4455-8380-3639f769777e",
+              "id": "15584417-a106-4358-85b9-798bf241906a",
               "name": "003 Why Use Recursion.mp4",
-              "relative_path": "07 - Recursion/003 Why Use Recursion.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\003 Why Use Recursion.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "7f15ef4f-d160-454c-8fef-46f887caf2f5",
+              "id": "648d101f-337b-4327-911a-7f913dc02cda",
               "name": "004 The Call Stack.mp4",
-              "relative_path": "07 - Recursion/004 The Call Stack.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\004 The Call Stack.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "291f17ab-a0b0-4c80-a54a-acd509893db2",
+              "id": "ca03991d-8e89-4fe3-a705-1d8f32873747",
               "name": "005 Our First Recursive Function.mp4",
-              "relative_path": "07 - Recursion/005 Our First Recursive Function.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\005 Our First Recursive Function.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "76ad8dec-dae9-4e11-8414-32b362beed12",
+              "id": "f756a944-9b12-475d-ae19-ffaf8363d4e7",
               "name": "007 Our Second Recursive Function.mp4",
-              "relative_path": "07 - Recursion/007 Our Second Recursive Function.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\007 Our Second Recursive Function.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "cfe2ed90-35d5-4725-901c-0c46e951f47f",
+              "id": "769257bf-599d-4ae6-8921-5310c49ad687",
               "name": "008 Writing Factorial Iteratively.mp4",
-              "relative_path": "07 - Recursion/008 Writing Factorial Iteratively.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\008 Writing Factorial Iteratively.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "e3aa5072-ecf4-40b4-bcc4-349e30189227",
+              "id": "8b15ec80-0e6d-411f-b5aa-345038b6267d",
               "name": "009 Writing Factorial Recursively.mp4",
-              "relative_path": "07 - Recursion/009 Writing Factorial Recursively.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\009 Writing Factorial Recursively.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ed66b1f6-a02e-4781-a433-d8ad87b58977",
+              "id": "2bbea425-5038-4f00-9126-a682b5941b13",
               "name": "010 Common Recursion Pitfalls.mp4",
-              "relative_path": "07 - Recursion/010 Common Recursion Pitfalls.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\010 Common Recursion Pitfalls.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8d586d8f-51a3-46c3-83a6-d931072ebe32",
+              "id": "92ed08d2-587d-4b86-a3f3-1d1e29250f9d",
               "name": "011 Helper Method Recursion.mp4",
-              "relative_path": "07 - Recursion/011 Helper Method Recursion.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\011 Helper Method Recursion.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "7ae7c8df-afef-4b63-abec-bd4db2524f9d",
+              "id": "9095f348-213d-45ad-ad0d-ce76f4d0d5db",
               "name": "012 Pure Recursion.mp4",
-              "relative_path": "07 - Recursion/012 Pure Recursion.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\07 - Recursion\\012 Pure Recursion.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "f9fcb6fd-751f-4cd3-9fdf-405a1c433295",
+          "id": "31c87f1f-f61f-4414-876f-c20257bd702a",
           "name": "10 - Searching Algorithms",
-          "relative_path": "10 - Searching Algorithms",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms",
           "type": "directory",
           "children": [
             {
-              "id": "be23c120-4be8-4b07-b481-f959cbd4a33d",
+              "id": "adab2838-0274-476a-8b4d-60459a15a563",
               "name": "002 Intro to Searching.mp4",
-              "relative_path": "10 - Searching Algorithms/002 Intro to Searching.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\002 Intro to Searching.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "9516de0d-1359-4617-a357-00732e715b47",
+              "id": "32af98bc-a6f8-4a5b-9614-5f81adb9325c",
               "name": "003 Intro to Linear Search.mp4",
-              "relative_path": "10 - Searching Algorithms/003 Intro to Linear Search.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\003 Intro to Linear Search.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c9ed8a3f-9b95-410f-bba3-6b2a22d3f3c4",
+              "id": "1911d646-7f1c-4772-b4c1-ba988e546ba5",
               "name": "005 Linear Search Solution.mp4",
-              "relative_path": "10 - Searching Algorithms/005 Linear Search Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\005 Linear Search Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "2daf647f-533f-47f9-a34d-c003c93d565b",
+              "id": "1d4e7895-10fe-46ff-b65e-e33099563a5b",
               "name": "006 Linear Search BIG O.mp4",
-              "relative_path": "10 - Searching Algorithms/006 Linear Search BIG O.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\006 Linear Search BIG O.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "7b7dad63-5870-4914-b5ff-f265f9e64915",
+              "id": "56e9fc29-13ff-4963-8e45-6f911539c1dd",
               "name": "007 Intro to Binary Search.mp4",
-              "relative_path": "10 - Searching Algorithms/007 Intro to Binary Search.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\007 Intro to Binary Search.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "473820b7-f24d-4b73-a26a-d3dc02968c4d",
+              "id": "76347262-9cd6-4efe-bdd8-a0cb40245ec7",
               "name": "008 Binary Search PseudoCode.mp4",
-              "relative_path": "10 - Searching Algorithms/008 Binary Search PseudoCode.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\008 Binary Search PseudoCode.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "3612d40c-19da-476e-b4df-4d6b622428c2",
+              "id": "d0a82fca-7807-4422-8fed-29aa32dc4a69",
               "name": "010 Binary Search Solution.mp4",
-              "relative_path": "10 - Searching Algorithms/010 Binary Search Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\010 Binary Search Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "fbd237f9-00f8-47cd-99c4-f322a8a8c36d",
+              "id": "d9ea2b8d-0190-4c7d-ab2e-9df3298ab17a",
               "name": "011 Binary Search BIG O.mp4",
-              "relative_path": "10 - Searching Algorithms/011 Binary Search BIG O.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\011 Binary Search BIG O.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "d09c0807-1f40-4399-a99b-c4d814861d4d",
+              "id": "c026387c-f5b8-431f-99eb-e186b66f9a9f",
               "name": "012 Naive String Search.mp4",
-              "relative_path": "10 - Searching Algorithms/012 Naive String Search.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\012 Naive String Search.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f20e1b73-98ac-4b7c-9e3d-77db5728256f",
+              "id": "5d520184-d868-45ee-8151-8a5ca95c6a09",
               "name": "013 Naive String Search Implementation.mp4",
-              "relative_path": "10 - Searching Algorithms/013 Naive String Search Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\10 - Searching Algorithms\\013 Naive String Search Implementation.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "49704b47-cfc1-4e0e-b05d-bddecee65364",
+          "id": "77e56b03-0d5e-408a-beed-55df20d624f6",
           "name": "11 - Bubble Sort",
-          "relative_path": "11 - Bubble Sort",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\11 - Bubble Sort",
           "type": "directory",
           "children": [
             {
-              "id": "1da22033-31ef-4170-83ed-73cb6f2cf2b1",
+              "id": "8a7fa62b-2c9c-47dd-a4a4-d86bbf05e39a",
               "name": "002 Introduction to Sorting Algorithms.mp4",
-              "relative_path": "11 - Bubble Sort/002 Introduction to Sorting Algorithms.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\11 - Bubble Sort\\002 Introduction to Sorting Algorithms.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "cf15a3d8-5c0d-4112-baaf-25b390b1f6cd",
+              "id": "73723d06-08cd-440d-91d2-d213242926ee",
               "name": "003 Built-In JavaScript Sorting.mp4",
-              "relative_path": "11 - Bubble Sort/003 Built-In JavaScript Sorting.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\11 - Bubble Sort\\003 Built-In JavaScript Sorting.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "b5d1b013-2e19-479c-9f4c-65e415124ef8",
+              "id": "c8aa1b96-86b6-442a-9fa2-7b3029590da1",
               "name": "004 Bubble Sort Overview.mp4",
-              "relative_path": "11 - Bubble Sort/004 Bubble Sort Overview.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\11 - Bubble Sort\\004 Bubble Sort Overview.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "59d3b887-0ad2-4d41-9d3e-eb0b86848245",
+              "id": "10ad90fb-2112-45c3-a4bd-700293400f96",
               "name": "005 Bubble Sort Implementation.mp4",
-              "relative_path": "11 - Bubble Sort/005 Bubble Sort Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\11 - Bubble Sort\\005 Bubble Sort Implementation.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f947ecd0-96b8-4098-8cb3-e0883195e38f",
+              "id": "b19a52bc-06a5-49a3-9216-3987686bfb31",
               "name": "006 Bubble Sort Optimization.mp4",
-              "relative_path": "11 - Bubble Sort/006 Bubble Sort Optimization.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\11 - Bubble Sort\\006 Bubble Sort Optimization.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "47a2a0d2-c405-47e8-a15e-7b639cbff2cf",
+              "id": "40824f64-52cb-4e7e-8c74-18cc0cd12b4c",
               "name": "007 Bubble Sort BIG O Complexity.mp4",
-              "relative_path": "11 - Bubble Sort/007 Bubble Sort BIG O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\11 - Bubble Sort\\007 Bubble Sort BIG O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "e48c8202-70e3-487d-8d8a-6e6db760e947",
+          "id": "2fda2445-a425-4a08-9f6e-791b4c586556",
           "name": "12 - Selection Sort",
-          "relative_path": "12 - Selection Sort",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\12 - Selection Sort",
           "type": "directory",
           "children": [
             {
-              "id": "75adb951-c993-4cd7-89b7-0101789489f0",
+              "id": "3e4a310b-ac57-455a-bc09-16bfb62793c2",
               "name": "002 Selection Sort Introduction.mp4",
-              "relative_path": "12 - Selection Sort/002 Selection Sort Introduction.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\12 - Selection Sort\\002 Selection Sort Introduction.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "7b8a58b4-d24a-47d8-bead-13c83fe3ed10",
+              "id": "eeae8be6-c3f0-453c-8ad0-107b3d48f55b",
               "name": "003 Selection Sort Implementation.mp4",
-              "relative_path": "12 - Selection Sort/003 Selection Sort Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\12 - Selection Sort\\003 Selection Sort Implementation.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "43f5e914-dae7-4539-8bd5-fb1e27a063fe",
+              "id": "b6d7cfd0-9eda-419c-8218-b9912edd8dc3",
               "name": "004 Selection Sort Big O Complexity.mp4",
-              "relative_path": "12 - Selection Sort/004 Selection Sort Big O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\12 - Selection Sort\\004 Selection Sort Big O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "8369c3d6-72fe-4bd3-b633-27c658eead5b",
+          "id": "f0a30852-7d12-4296-8a28-c302399ac41a",
           "name": "13 - Insertion Sort",
-          "relative_path": "13 - Insertion Sort",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\13 - Insertion Sort",
           "type": "directory",
           "children": [
             {
-              "id": "0f1e1b0b-4dd1-4f83-bb00-1f220aa3d491",
+              "id": "c36e7a5f-202b-4080-9cfa-87eaf2a00072",
               "name": "002 Insertion Sort Introduction.mp4",
-              "relative_path": "13 - Insertion Sort/002 Insertion Sort Introduction.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\13 - Insertion Sort\\002 Insertion Sort Introduction.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "477a15df-8582-42b6-b8aa-c55b685f06a7",
+              "id": "619013b6-6690-4dc3-b2e3-b56a48f477ea",
               "name": "003 Insertion Sort Implementation.mp4",
-              "relative_path": "13 - Insertion Sort/003 Insertion Sort Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\13 - Insertion Sort\\003 Insertion Sort Implementation.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "96c45212-641a-48e9-a6ff-1f48c4627a7f",
+              "id": "f4bc5f6b-0cc9-415a-b634-46a33443daa0",
               "name": "004 Insertion Sort BIG O Complexity.mp4",
-              "relative_path": "13 - Insertion Sort/004 Insertion Sort BIG O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\13 - Insertion Sort\\004 Insertion Sort BIG O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "0ce7f6fc-b2c8-4951-8403-8aa894d7e1cb",
+          "id": "55de19da-5488-4f69-93ef-5bec96562a79",
           "name": "14 - Comparing Bubble, Selection, and Insertion Sort",
-          "relative_path": "14 - Comparing Bubble, Selection, and Insertion Sort",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\14 - Comparing Bubble, Selection, and Insertion Sort",
           "type": "directory",
           "children": [
             {
-              "id": "7783c249-f8ca-4595-8bf0-d4fb7bcd3879",
+              "id": "a4e81c4d-c1fc-4bab-897e-4c8429d9f276",
               "name": "001 Comparing Bubble, Selection, and Insertion Sort.mp4",
-              "relative_path": "14 - Comparing Bubble, Selection, and Insertion Sort/001 Comparing Bubble, Selection, and Insertion Sort.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\14 - Comparing Bubble, Selection, and Insertion Sort\\001 Comparing Bubble, Selection, and Insertion Sort.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "1c67ae0c-f01a-4866-a916-0c2260a926c8",
+          "id": "c2a2fe75-f833-449b-b530-79de65f0e70e",
           "name": "15 - Merge Sort",
-          "relative_path": "15 - Merge Sort",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort",
           "type": "directory",
           "children": [
             {
-              "id": "c6663705-66b6-422e-9948-7f633131db95",
+              "id": "d16414a6-1c9f-4284-9b70-1a6adbf63e12",
               "name": "002 Intro to the Crazier Sorts.mp4",
-              "relative_path": "15 - Merge Sort/002 Intro to the Crazier Sorts.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort\\002 Intro to the Crazier Sorts.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "e6e9cfc2-4724-411d-8e65-345c8b4bdd5c",
+              "id": "d2baafff-211c-4afb-a978-5f484c6b378b",
               "name": "003 Merge Sort Introduction.mp4",
-              "relative_path": "15 - Merge Sort/003 Merge Sort Introduction.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort\\003 Merge Sort Introduction.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "34648a28-e6f9-4a64-95ad-ced85c667e6a",
+              "id": "6e9aaee2-1905-4b2f-915e-f410d2f7153a",
               "name": "004 Merging Arrays Intro.mp4",
-              "relative_path": "15 - Merge Sort/004 Merging Arrays Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort\\004 Merging Arrays Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "395ac943-07ce-4409-b5ad-cbe64f779a48",
+              "id": "47d7ab1f-e4f5-4c43-bd6f-42249a93c646",
               "name": "005 Merging Arrays Implementation.mp4",
-              "relative_path": "15 - Merge Sort/005 Merging Arrays Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort\\005 Merging Arrays Implementation.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8705298a-da9e-4abe-8781-fbbdd220d7ea",
+              "id": "b1408a03-7fcf-464c-bfad-b8257b93a6fc",
               "name": "006 Writing Merge Sort Part 1.mp4",
-              "relative_path": "15 - Merge Sort/006 Writing Merge Sort Part 1.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort\\006 Writing Merge Sort Part 1.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "138c1f0a-3b29-45c5-a8ea-b800c9f2a002",
+              "id": "424ede59-6383-4a8f-ac7c-5da56ed63a42",
               "name": "007 Writing Merge Sort Part 2.mp4",
-              "relative_path": "15 - Merge Sort/007 Writing Merge Sort Part 2.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort\\007 Writing Merge Sort Part 2.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f7b261f4-d137-45db-8e4f-ed8b32c065b5",
+              "id": "73ac071b-7e78-42e7-a9d8-8879646dc333",
               "name": "008 Merge Sort BIG O Complexity.mp4",
-              "relative_path": "15 - Merge Sort/008 Merge Sort BIG O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\15 - Merge Sort\\008 Merge Sort BIG O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "456445c6-b844-45de-a7d7-1f556ffab313",
+          "id": "7aa9d60a-86e3-4289-8652-d0dcd0343fe6",
           "name": "16 - Quick Sort",
-          "relative_path": "16 - Quick Sort",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\16 - Quick Sort",
           "type": "directory",
           "children": [
             {
-              "id": "bd4f9d20-9354-426e-a50b-d85dd81638a9",
+              "id": "fd88200c-fc47-490f-b291-0732dfd28637",
               "name": "002 Introduction to Quick Sort.mp4",
-              "relative_path": "16 - Quick Sort/002 Introduction to Quick Sort.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\16 - Quick Sort\\002 Introduction to Quick Sort.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ba301f12-f793-45de-91c7-d27441c10b8b",
+              "id": "d02a89ef-2e5e-49fd-9f5e-6b20fafcab8f",
               "name": "003 Pivot Helper Introduction.mp4",
-              "relative_path": "16 - Quick Sort/003 Pivot Helper Introduction.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\16 - Quick Sort\\003 Pivot Helper Introduction.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ade60b65-004a-4982-8b72-6336424019d7",
+              "id": "37d82cf6-bd5a-41ee-b244-eb5de87dc0e1",
               "name": "004 Pivot Helper Implementation.mp4",
-              "relative_path": "16 - Quick Sort/004 Pivot Helper Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\16 - Quick Sort\\004 Pivot Helper Implementation.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "90a01aca-a4ca-4a7c-b1ef-6f58a1e64034",
+              "id": "9458ff35-0ffa-4f26-bc3d-4a3cc15188b3",
               "name": "005 Quick Sort Implementation.mp4",
-              "relative_path": "16 - Quick Sort/005 Quick Sort Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\16 - Quick Sort\\005 Quick Sort Implementation.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8573affb-1995-4072-9988-4c2ffe260ae7",
+              "id": "303027c5-0545-4c65-a77f-bc9b1d63dc6d",
               "name": "006 Quick Sort Call Stack Walkthrough.mp4",
-              "relative_path": "16 - Quick Sort/006 Quick Sort Call Stack Walkthrough.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\16 - Quick Sort\\006 Quick Sort Call Stack Walkthrough.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ef5667f3-d19e-46f9-85fc-36d7353d76b4",
+              "id": "6c7490c9-48d7-4061-b341-6f165cff23f7",
               "name": "007 Quick Sort Big O Complexity.mp4",
-              "relative_path": "16 - Quick Sort/007 Quick Sort Big O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\16 - Quick Sort\\007 Quick Sort Big O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "a922ad55-8711-4711-b0f1-0c0deb01d20d",
+          "id": "f3185099-9d72-4a97-a28d-994a0b807eaa",
           "name": "17 - Radix Sort",
-          "relative_path": "17 - Radix Sort",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\17 - Radix Sort",
           "type": "directory",
           "children": [
             {
-              "id": "b793cf12-c948-4438-9d26-cc30a1c4df72",
+              "id": "e7e8704d-d376-4675-b270-237cf3cf629c",
               "name": "002 Radix Sort Introduction.mp4",
-              "relative_path": "17 - Radix Sort/002 Radix Sort Introduction.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\17 - Radix Sort\\002 Radix Sort Introduction.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "b0add4b2-d5ea-4c68-9928-f50bbcb00d95",
+              "id": "b286d457-8392-4ba5-97f0-d45264d61015",
               "name": "003 Radix Sort Helper Methods.mp4",
-              "relative_path": "17 - Radix Sort/003 Radix Sort Helper Methods.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\17 - Radix Sort\\003 Radix Sort Helper Methods.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8fdd080a-61d7-402a-bdd3-fa913bc17e9a",
+              "id": "6287de40-bb88-4682-bb4b-891f3dcb4ed0",
               "name": "004 Radix Sort Pseudocode.mp4",
-              "relative_path": "17 - Radix Sort/004 Radix Sort Pseudocode.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\17 - Radix Sort\\004 Radix Sort Pseudocode.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "517ba38a-8e62-43eb-be67-d060cdaec2bc",
+              "id": "218613ed-abae-4e0f-8ef3-f1f6561ff17a",
               "name": "005 Radix Sort Implementation.mp4",
-              "relative_path": "17 - Radix Sort/005 Radix Sort Implementation.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\17 - Radix Sort\\005 Radix Sort Implementation.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "5e61a164-0de0-468d-8d63-ee9b09bb8e94",
+              "id": "181c956b-ac2e-41cf-84c6-03180a43387b",
               "name": "006 Radix Sort BIG O Complexity.mp4",
-              "relative_path": "17 - Radix Sort/006 Radix Sort BIG O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\17 - Radix Sort\\006 Radix Sort BIG O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "aaec6e59-08f2-4814-8e0e-dea160b84389",
+          "id": "7d7bd6d7-39b8-4ca0-8458-faa0d80b5baa",
           "name": "18 - Data Structures Introduction",
-          "relative_path": "18 - Data Structures Introduction",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\18 - Data Structures Introduction",
           "type": "directory",
           "children": [
             {
-              "id": "9e425eca-f288-4733-92e8-da68daeb0fc8",
+              "id": "f70dd164-bbff-41a4-b49b-a9efc072193b",
               "name": "001 Which Data Structure Is The Best.mp4",
-              "relative_path": "18 - Data Structures Introduction/001 Which Data Structure Is The Best.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\18 - Data Structures Introduction\\001 Which Data Structure Is The Best.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f6da2493-a35b-40d6-a3af-1d2cadd73b54",
+              "id": "3c486fc6-d542-409a-bd98-f0e59bdcfcdd",
               "name": "002 ES2015 Class Syntax Overview.mp4",
-              "relative_path": "18 - Data Structures Introduction/002 ES2015 Class Syntax Overview.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\18 - Data Structures Introduction\\002 ES2015 Class Syntax Overview.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "17266876-86bb-4ccc-8c89-b5d079026bcd",
+              "id": "4c0da2e0-e8ba-4489-b728-dfe74b07997b",
               "name": "003 Data Structures The Class Keyword.mp4",
-              "relative_path": "18 - Data Structures Introduction/003 Data Structures The Class Keyword.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\18 - Data Structures Introduction\\003 Data Structures The Class Keyword.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "1ee6a915-7d49-471b-9a18-9da448e98bd5",
+              "id": "8124f785-c604-45a7-a527-4dc83c1b04ca",
               "name": "004 Data Structures Adding Instance Methods.mp4",
-              "relative_path": "18 - Data Structures Introduction/004 Data Structures Adding Instance Methods.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\18 - Data Structures Introduction\\004 Data Structures Adding Instance Methods.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "da3ddbb8-74e9-4c8a-9e15-e37dc1e658b9",
+              "id": "b378c682-7e87-472a-a8b3-faa3ac025991",
               "name": "005 Data Structures Adding Class Methods.mp4",
-              "relative_path": "18 - Data Structures Introduction/005 Data Structures Adding Class Methods.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\18 - Data Structures Introduction\\005 Data Structures Adding Class Methods.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "f38698a5-1d0a-4078-ab03-c4d1874ecbf5",
+          "id": "22126dcf-5fcc-4016-83f2-5a742393f202",
           "name": "19 - Singly Linked Lists",
-          "relative_path": "19 - Singly Linked Lists",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists",
           "type": "directory",
           "children": [
             {
-              "id": "23241b05-b782-457f-950c-f735bb08778d",
+              "id": "7d6b763a-c707-464b-86d5-fa4b2f4dc57b",
               "name": "002 Intro to Singly Linked Lists.mp4",
-              "relative_path": "19 - Singly Linked Lists/002 Intro to Singly Linked Lists.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\002 Intro to Singly Linked Lists.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "35c16f32-a7d8-4abc-aee9-52d9cfa5a6f2",
+              "id": "9187a1e9-d453-427c-bb45-fbc79fb22e4e",
               "name": "003 Starter Code and Push Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/003 Starter Code and Push Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\003 Starter Code and Push Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "52922ec7-d330-4d10-b64b-f5a5a3024389",
+              "id": "2ae31654-c76f-4541-aa04-f781cbaa90e9",
               "name": "004 Singly Linked List Push Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/004 Singly Linked List Push Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\004 Singly Linked List Push Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "99ad696f-1a0d-444a-90d0-dda4b4d0476c",
+              "id": "60205fd0-7254-45a1-abf5-a6a76901dde2",
               "name": "005 Singly Linked List Pop Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/005 Singly Linked List Pop Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\005 Singly Linked List Pop Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "d88162b9-92f2-4dcc-a255-da40aebe06bb",
+              "id": "65aeae17-1e62-498d-90d2-ccffe5f38b17",
               "name": "006 Singly Linked List Pop Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/006 Singly Linked List Pop Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\006 Singly Linked List Pop Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "34d66cba-afba-46fa-89c2-7182ab2ee23f",
+              "id": "d7e68f7c-fbdc-4290-a293-5714451246ee",
               "name": "007 Singly Linked List Shift Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/007 Singly Linked List Shift Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\007 Singly Linked List Shift Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8ca4f8a0-0a48-46cc-9715-03e6d8c47acb",
+              "id": "4f8c7ad5-27c9-4e1e-a31f-bf50e373a6ad",
               "name": "008 Singly Linked List Shift Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/008 Singly Linked List Shift Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\008 Singly Linked List Shift Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "e0ec05a1-b231-4cbc-bbd8-1092596d48b4",
+              "id": "7ab47608-2760-4870-8f47-08583241e4d4",
               "name": "009 Singly Linked List Unshift Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/009 Singly Linked List Unshift Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\009 Singly Linked List Unshift Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a58b63c2-7d47-43e5-b55c-f0506a36a486",
+              "id": "36d373c7-af7f-4e1f-8dba-e1115cfc2635",
               "name": "010 Singly Linked List Unshift Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/010 Singly Linked List Unshift Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\010 Singly Linked List Unshift Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "687fe6d1-cc12-46a3-954b-e258e493c798",
+              "id": "cfe14dfc-06d5-470e-9eae-a2921d69e5a9",
               "name": "011 Singly Linked List Get Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/011 Singly Linked List Get Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\011 Singly Linked List Get Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "13980a1e-f742-4e0f-a7cb-eb57126a24f5",
+              "id": "9697117d-2718-4fbe-a2e1-9fea51a1dcfc",
               "name": "012 Singly Linked List Get Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/012 Singly Linked List Get Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\012 Singly Linked List Get Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "1559a378-1ddc-422b-bec3-f7cbf2cb369d",
+              "id": "174826bd-cc1f-4951-b940-c1cd96f3a457",
               "name": "013 Singly Linked List Set Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/013 Singly Linked List Set Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\013 Singly Linked List Set Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f3b4c6ad-b387-4a1d-bb10-838cd02144de",
+              "id": "0fc400b5-dcfe-4b7d-b2ea-4c55f0d66e6a",
               "name": "014 Singly Linked List Set Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/014 Singly Linked List Set Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\014 Singly Linked List Set Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "49b5a150-b693-46b2-a7b8-fdb06e316085",
+              "id": "39256681-4383-4fae-90c8-905842ff3608",
               "name": "015 Singly Linked List Insert Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/015 Singly Linked List Insert Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\015 Singly Linked List Insert Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "2b9191c9-b8b9-4aa1-82e3-263dcb15bc80",
+              "id": "8240a3a1-d973-4845-bba5-c93653805b9a",
               "name": "016 Singly Linked List Insert Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/016 Singly Linked List Insert Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\016 Singly Linked List Insert Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "3aee3f4e-b57c-4462-95c8-faf22cab93e8",
+              "id": "78b7b742-6e2b-4669-986a-f8e6d454e6bb",
               "name": "017 Singly Linked List Remove Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/017 Singly Linked List Remove Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\017 Singly Linked List Remove Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c9e84963-dc2d-4fe5-94e7-732bad6d325e",
+              "id": "a29a2097-df87-4af4-9ad2-cd082c0cb1f0",
               "name": "018 Singly Linked List Remove Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/018 Singly Linked List Remove Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\018 Singly Linked List Remove Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "30500807-72f5-4617-bff3-65645b361870",
+              "id": "71b05564-0dbf-4bfa-be15-be9e3e5ed60f",
               "name": "019 Singly Linked List Reverse Intro.mp4",
-              "relative_path": "19 - Singly Linked Lists/019 Singly Linked List Reverse Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\019 Singly Linked List Reverse Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "e1b0526e-1d83-4d03-bf25-51ccb070b757",
+              "id": "3133708d-d4a2-4ec9-a9d9-05110f160e5f",
               "name": "020 Singly Linked List Reverse Solution.mp4",
-              "relative_path": "19 - Singly Linked Lists/020 Singly Linked List Reverse Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\020 Singly Linked List Reverse Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a95d544d-13a7-4bef-9c36-06bf842b291c",
+              "id": "53584a2a-21cc-4bc7-9d9d-b128c0034359",
               "name": "021 Singly Linked List BIG O Complexity.mp4",
-              "relative_path": "19 - Singly Linked Lists/021 Singly Linked List BIG O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\19 - Singly Linked Lists\\021 Singly Linked List BIG O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "ba8e0442-9235-479c-aaa7-a6d274336164",
+          "id": "ee41cdda-55fd-428d-ab61-5ba8453a1e25",
           "name": "20 - Doubly Linked Lists",
-          "relative_path": "20 - Doubly Linked Lists",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists",
           "type": "directory",
           "children": [
             {
-              "id": "47b8d25d-9c0f-4717-b111-c2bee8bc35bb",
+              "id": "611767c5-f30a-467b-aacd-21a5bc956558",
               "name": "002 Doubly Linked Lists Introduction.mp4",
-              "relative_path": "20 - Doubly Linked Lists/002 Doubly Linked Lists Introduction.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\002 Doubly Linked Lists Introduction.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "38cc6adb-fdb2-4fc7-86f6-478a84857b7f",
+              "id": "786e3232-c91a-4b84-869c-9ec79992a346",
               "name": "003 Setting Up Our Node Class.mp4",
-              "relative_path": "20 - Doubly Linked Lists/003 Setting Up Our Node Class.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\003 Setting Up Our Node Class.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "1fb7bba4-e082-447c-9370-28d66bf0c479",
+              "id": "ce307f56-0f77-4181-809e-ab92e661ae0c",
               "name": "004 Push.mp4",
-              "relative_path": "20 - Doubly Linked Lists/004 Push.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\004 Push.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "aed026e6-1096-47d1-b7d0-f359a3c88649",
+              "id": "b156098e-ee13-4493-a272-0bb3a94b7050",
               "name": "005 Push Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/005 Push Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\005 Push Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "1331ed9d-e601-47ee-9238-b12b195de2d8",
+              "id": "ef3b8141-d54e-482e-a00e-b38027d1ea45",
               "name": "006 Pop.mp4",
-              "relative_path": "20 - Doubly Linked Lists/006 Pop.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\006 Pop.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "2e5077aa-48bb-4423-9e1d-aaa5c983efa9",
+              "id": "a0389bc2-1c94-42af-a480-3561fe3b597e",
               "name": "007 Pop Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/007 Pop Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\007 Pop Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ff973342-0720-425b-8cc1-bb3eb0309a6a",
+              "id": "fa364e19-907a-4105-ae42-6f149fea4da6",
               "name": "008 Shift.mp4",
-              "relative_path": "20 - Doubly Linked Lists/008 Shift.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\008 Shift.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "bc66ec49-4488-4183-828b-afb70e53f133",
+              "id": "2af56e92-4a49-429c-a728-e2cff5346906",
               "name": "009 Shift Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/009 Shift Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\009 Shift Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c28fb23e-e46a-423f-9ebe-e533b9783a4a",
+              "id": "7f3af751-4683-4409-a37c-5510d3db2a07",
               "name": "010 Unshift.mp4",
-              "relative_path": "20 - Doubly Linked Lists/010 Unshift.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\010 Unshift.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "b3a03fcf-14a4-4429-9e62-57e86513f2cd",
+              "id": "760b2050-af86-426e-9f48-108864d98c4d",
               "name": "011 Unshift Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/011 Unshift Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\011 Unshift Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8eed4aa9-548b-49a8-afd1-9ca6b68e115f",
+              "id": "2ee93a0c-2c21-4eeb-b7c6-4ba75080ca5b",
               "name": "012 Get.mp4",
-              "relative_path": "20 - Doubly Linked Lists/012 Get.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\012 Get.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8719194c-e23d-44bf-9c13-d18c2ad16b4d",
+              "id": "4a3c511d-b872-4e5f-92a8-b57851c447d1",
               "name": "013 Get Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/013 Get Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\013 Get Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "602f3463-e48e-4d67-80ad-54933a726d21",
+              "id": "6202dfb6-373c-4da1-a828-68638875f0bb",
               "name": "014 Set.mp4",
-              "relative_path": "20 - Doubly Linked Lists/014 Set.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\014 Set.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "d30f3876-05fa-4c2a-87c1-13b0a30b4dab",
+              "id": "2f352569-0347-4897-b60f-60925c3a6e77",
               "name": "015 Set Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/015 Set Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\015 Set Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f948c073-213e-45aa-9b92-21ccd1536afb",
+              "id": "868f6a57-dd89-42b3-8893-8db3f0b9b207",
               "name": "016 Insert.mp4",
-              "relative_path": "20 - Doubly Linked Lists/016 Insert.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\016 Insert.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "7bd1de15-ca7a-4a22-8305-536725c020a5",
+              "id": "15c42b44-2ea8-4f5e-b976-53abdc5eed47",
               "name": "017 Insert Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/017 Insert Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\017 Insert Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "397e500b-90f6-44a0-9283-a9b9a5684469",
+              "id": "074df036-ee1a-4bc1-97c4-8798b0f771dd",
               "name": "018 Remove.mp4",
-              "relative_path": "20 - Doubly Linked Lists/018 Remove.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\018 Remove.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "40e954e0-4f4a-401f-980f-9d598e8a17ad",
+              "id": "95a5e78d-d7b2-47fc-8613-881beb8e8cbf",
               "name": "019 Remove Solution.mp4",
-              "relative_path": "20 - Doubly Linked Lists/019 Remove Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\019 Remove Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f783ad35-c816-4154-b0cc-f950c53ab9eb",
+              "id": "4ccf43d2-b3c5-4d6d-97bd-7a2e574a99ec",
               "name": "020 Comparing Singly and Doubly Linked Lists.mp4",
-              "relative_path": "20 - Doubly Linked Lists/020 Comparing Singly and Doubly Linked Lists.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\20 - Doubly Linked Lists\\020 Comparing Singly and Doubly Linked Lists.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "c77346e6-ba72-4a36-9ba3-8953de1b3f9a",
+          "id": "13665632-315a-4a62-89f6-de7479a11aea",
           "name": "21 - Stacks + Queues",
-          "relative_path": "21 - Stacks + Queues",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues",
           "type": "directory",
           "children": [
             {
-              "id": "2d416a19-3c87-47d1-b3bd-9d8e4b40feac",
+              "id": "40fd52ab-36f8-415e-b936-1d73746c4bb3",
               "name": "002 Intro to Stacks.mp4",
-              "relative_path": "21 - Stacks + Queues/002 Intro to Stacks.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\002 Intro to Stacks.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "cad1ffc3-873a-4df2-9311-fcb77f1473bd",
+              "id": "da636cb2-65b2-48a8-9b90-835310e6bbf7",
               "name": "003 Creating a Stack with an Array.mp4",
-              "relative_path": "21 - Stacks + Queues/003 Creating a Stack with an Array.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\003 Creating a Stack with an Array.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "1a30ec01-b571-4deb-a6fa-59f2e6d10882",
+              "id": "874e7b9b-8cd2-41f4-9a00-28a132168bac",
               "name": "004 Writing Our Own Stack From Scratch.mp4",
-              "relative_path": "21 - Stacks + Queues/004 Writing Our Own Stack From Scratch.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\004 Writing Our Own Stack From Scratch.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a6bdd1c1-20e2-4ce4-a2ce-10ef2b2f2cc7",
+              "id": "220ff115-2c04-4143-8ff2-d266539c6811",
               "name": "005 BIG O of Stacks.mp4",
-              "relative_path": "21 - Stacks + Queues/005 BIG O of Stacks.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\005 BIG O of Stacks.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a4ff3fd5-ce32-40a2-854c-d15b9d5b3019",
+              "id": "1fc718dd-c552-4693-987a-787550244660",
               "name": "006 Intro to Queues.mp4",
-              "relative_path": "21 - Stacks + Queues/006 Intro to Queues.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\006 Intro to Queues.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "115e531e-0e41-46fc-8165-30ab6e4aabcb",
+              "id": "742c4b35-9832-43cb-824e-c74c9d9b706f",
               "name": "007 Creating Queues Using Arrays.mp4",
-              "relative_path": "21 - Stacks + Queues/007 Creating Queues Using Arrays.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\007 Creating Queues Using Arrays.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "1dd8203b-5f00-4032-bd08-f3dc6cfc1a73",
+              "id": "5a203d9d-53b2-4bc5-b4bc-765d776d85b3",
               "name": "008 Writing Our Own Queue From Scratch.mp4",
-              "relative_path": "21 - Stacks + Queues/008 Writing Our Own Queue From Scratch.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\008 Writing Our Own Queue From Scratch.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "845b3dce-713b-42f6-a567-3f93ad4a10bb",
+              "id": "c50eff91-526e-4423-ae2e-7ee3b0734234",
               "name": "009 BIG O of Queues.mp4",
-              "relative_path": "21 - Stacks + Queues/009 BIG O of Queues.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\21 - Stacks + Queues\\009 BIG O of Queues.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "3b638d6e-08bd-4a41-b65b-b8fbab661989",
+          "id": "4d21b07c-4445-4b6a-b6e9-44d676628303",
           "name": "22 - Binary Search Trees",
-          "relative_path": "22 - Binary Search Trees",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees",
           "type": "directory",
           "children": [
             {
-              "id": "28f68df2-3d65-45ef-a91a-909e317bd5be",
+              "id": "01f1cea3-4d82-4ddc-af71-3e3153a426eb",
               "name": "002 Introduction to Trees.mp4",
-              "relative_path": "22 - Binary Search Trees/002 Introduction to Trees.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\002 Introduction to Trees.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "6914714a-fa9b-4ea6-95ad-713d58dc790c",
+              "id": "e2ae9043-e3ae-41aa-83db-f008e431e0fa",
               "name": "003 Uses For Trees.mp4",
-              "relative_path": "22 - Binary Search Trees/003 Uses For Trees.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\003 Uses For Trees.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a9e3e352-e849-43c2-9331-4294e5808758",
+              "id": "cf03287a-191f-4717-a7b0-5b1d809f9622",
               "name": "004 Intro to Binary Trees.mp4",
-              "relative_path": "22 - Binary Search Trees/004 Intro to Binary Trees.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\004 Intro to Binary Trees.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "65b46586-d48e-4a31-bdff-d0f2cac8a9fc",
+              "id": "4342dfd9-542b-49ab-855a-560d83425dc2",
               "name": "005 POP QUIZ!.mp4",
-              "relative_path": "22 - Binary Search Trees/005 POP QUIZ!.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\005 POP QUIZ!.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f77cbf81-ef97-4505-b676-32d53c79ab86",
+              "id": "016ca7f4-d2b1-4567-b045-f3179058f517",
               "name": "006 Searching A Binary Search Tree.mp4",
-              "relative_path": "22 - Binary Search Trees/006 Searching A Binary Search Tree.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\006 Searching A Binary Search Tree.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "710c23e4-2000-416f-8875-868a09e23b09",
+              "id": "2fbfca12-d2ff-4a7c-9f6b-2d4a2a5e737d",
               "name": "007 Our Tree Classes.mp4",
-              "relative_path": "22 - Binary Search Trees/007 Our Tree Classes.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\007 Our Tree Classes.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "28ff8f36-ba48-455b-8491-3e6d81c6e1b7",
+              "id": "26aaf3cf-45c8-472c-a6da-9085f12b2441",
               "name": "008 BST Insert.mp4",
-              "relative_path": "22 - Binary Search Trees/008 BST Insert.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\008 BST Insert.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "3a3085e2-ad79-4617-9a39-669d02153008",
+              "id": "749b655b-faf4-4f62-9db7-4378c03a9e59",
               "name": "009 BST Insert Solution.mp4",
-              "relative_path": "22 - Binary Search Trees/009 BST Insert Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\009 BST Insert Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "db55f1f5-f175-4f6e-8b5b-58f2ca355613",
+              "id": "5355d02b-fbd2-4653-a4d8-34b6eb743081",
               "name": "010 BST Find.mp4",
-              "relative_path": "22 - Binary Search Trees/010 BST Find.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\010 BST Find.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "bbd0125d-747e-4437-b8ec-9678d5651d81",
+              "id": "0b9e098a-c667-4e51-b889-64976a7ee198",
               "name": "011 BST Find Solution.mp4",
-              "relative_path": "22 - Binary Search Trees/011 BST Find Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\011 BST Find Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "6c735be9-f82e-4601-9500-f92b6d773757",
+              "id": "abbdc199-c63b-4fbc-9316-444e3fbeca9e",
               "name": "012 Big O of Binary Search Trees.mp4",
-              "relative_path": "22 - Binary Search Trees/012 Big O of Binary Search Trees.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\22 - Binary Search Trees\\012 Big O of Binary Search Trees.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "9c0c4d3e-02ed-4838-adc1-32c62bff77bd",
+          "id": "4fceb38b-0635-478d-ba2e-a593deb49c81",
           "name": "23 - Tree Traversal",
-          "relative_path": "23 - Tree Traversal",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal",
           "type": "directory",
           "children": [
             {
-              "id": "5a80c864-db10-44ee-b0f9-63bb72e1b2ef",
+              "id": "c7764a1c-c444-4bd0-b4e8-431dc706cd9d",
               "name": "002 Intro To Tree Traversal.mp4",
-              "relative_path": "23 - Tree Traversal/002 Intro To Tree Traversal.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\002 Intro To Tree Traversal.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "b2741669-cedd-423c-860f-91e715f99bfe",
+              "id": "a50cefaa-2b67-4cf1-8946-371e9d1e4e31",
               "name": "003 Breadth First Search Intro.mp4",
-              "relative_path": "23 - Tree Traversal/003 Breadth First Search Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\003 Breadth First Search Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "950be904-1dda-4184-a31b-86f8d188bb37",
+              "id": "86fd36ef-6b62-4e64-9b92-e36570d8a952",
               "name": "004 Breadth First Search Solution.mp4",
-              "relative_path": "23 - Tree Traversal/004 Breadth First Search Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\004 Breadth First Search Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "908695dc-56c1-4dfb-a731-9210f0911e6c",
+              "id": "91a19b33-a029-4e1f-a279-723ec2041f3f",
               "name": "005 Depth First PreOrder Intro.mp4",
-              "relative_path": "23 - Tree Traversal/005 Depth First PreOrder Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\005 Depth First PreOrder Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "3af82194-7c38-4f59-bd4d-de23b6cbca30",
+              "id": "6ee4100b-983e-4a30-80dd-afa82cf24af0",
               "name": "006 Depth First PreOrder Solution.mp4",
-              "relative_path": "23 - Tree Traversal/006 Depth First PreOrder Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\006 Depth First PreOrder Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "9ce0722e-7249-43c8-900a-df0137f377d3",
+              "id": "c34690ea-574f-4ec0-9f6e-06730efc2a9e",
               "name": "007 Depth First PostOrder Intro.mp4",
-              "relative_path": "23 - Tree Traversal/007 Depth First PostOrder Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\007 Depth First PostOrder Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "19e18c03-01b4-486e-b36d-2f40fc56208b",
+              "id": "1d5e1ecd-53ed-423e-a922-d9ec41f81f2e",
               "name": "008 Depth First PostOrder Solution.mp4",
-              "relative_path": "23 - Tree Traversal/008 Depth First PostOrder Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\008 Depth First PostOrder Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "4fe86b72-9abb-4d6e-8834-b472a482bda2",
+              "id": "05b52d83-f055-48e8-855a-95f2d9ba9052",
               "name": "009 Depth First InOrder Intro.mp4",
-              "relative_path": "23 - Tree Traversal/009 Depth First InOrder Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\009 Depth First InOrder Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "002266d6-34e2-4f1b-b70e-ede6286ab45c",
+              "id": "0fae9719-2872-4ea4-96ae-008a4b4d05a0",
               "name": "010 Depth First InOrder Solution.mp4",
-              "relative_path": "23 - Tree Traversal/010 Depth First InOrder Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\010 Depth First InOrder Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "e5463807-fb96-4c3a-93bb-ecdfcc70a4a6",
+              "id": "05d20d77-2653-4c0f-a108-ad912bc8f2db",
               "name": "011 When to Use BFS and DFS.mp4",
-              "relative_path": "23 - Tree Traversal/011 When to Use BFS and DFS.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\23 - Tree Traversal\\011 When to Use BFS and DFS.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "1d074f05-64d0-4c17-9b5f-e31245c7fc75",
+          "id": "ea3ac1c3-564f-4077-9f27-536261fe8d84",
           "name": "24 - Binary Heaps",
-          "relative_path": "24 - Binary Heaps",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps",
           "type": "directory",
           "children": [
             {
-              "id": "82f25da6-23ac-4f21-ad30-2da5286e078f",
+              "id": "116a71be-1b15-4038-80e3-44dc9eb809f8",
               "name": "002 Intro to Heaps.mp4",
-              "relative_path": "24 - Binary Heaps/002 Intro to Heaps.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\002 Intro to Heaps.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "3448c53e-efe5-4ebd-b787-4536058b331b",
+              "id": "d169df96-168e-41ee-b0d3-6e1b823f98b6",
               "name": "003 Storing Heaps.mp4",
-              "relative_path": "24 - Binary Heaps/003 Storing Heaps.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\003 Storing Heaps.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "69a6488e-5325-4429-887f-fa5d7e4462d9",
+              "id": "a6936ad8-98fd-4a57-8ad4-93d897dfec6d",
               "name": "004 Heap Insert Intro.mp4",
-              "relative_path": "24 - Binary Heaps/004 Heap Insert Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\004 Heap Insert Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "03432457-a8c1-4682-baa2-2bf68a381901",
+              "id": "3dcb4d3c-7d19-451d-9a49-7a3807732c43",
               "name": "005 Heap Insert Solution.mp4",
-              "relative_path": "24 - Binary Heaps/005 Heap Insert Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\005 Heap Insert Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "4ec96889-7989-470d-af3f-4f5310763126",
+              "id": "0d8e9512-e387-4a1e-b541-dd5bbb77f977",
               "name": "006 Heap ExtractMax Intro.mp4",
-              "relative_path": "24 - Binary Heaps/006 Heap ExtractMax Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\006 Heap ExtractMax Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "dc6e4b1a-976d-493e-9e9b-0deb8ba9dddc",
+              "id": "4b61d734-9e41-42dc-951a-ca8c052293ca",
               "name": "007 Heap ExtractMax Solution.mp4",
-              "relative_path": "24 - Binary Heaps/007 Heap ExtractMax Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\007 Heap ExtractMax Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "0b8b99b5-982c-464f-96eb-2a7c585e06e9",
+              "id": "7eec70b2-8fa1-435d-a6c1-1b284759c0a4",
               "name": "008 Priority Queue Intro.mp4",
-              "relative_path": "24 - Binary Heaps/008 Priority Queue Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\008 Priority Queue Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "da83f7b2-4af5-47af-9320-e9952a349be6",
+              "id": "35791de4-fecc-41c7-a401-e29b72653696",
               "name": "009 Priority Queue Pseudocode.mp4",
-              "relative_path": "24 - Binary Heaps/009 Priority Queue Pseudocode.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\009 Priority Queue Pseudocode.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "e82c0f00-80bc-48f5-a9a1-a68aee09bbcc",
+              "id": "6faacce4-5762-4896-832b-acbe321cc055",
               "name": "010 Priority Queue Solution.mp4",
-              "relative_path": "24 - Binary Heaps/010 Priority Queue Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\010 Priority Queue Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "0dd11bd9-a171-4c3b-9190-5ea51d5651a3",
+              "id": "86b90d74-6e77-4278-b33f-d975139ae4fb",
               "name": "011 BIG O of Binary Heaps.mp4",
-              "relative_path": "24 - Binary Heaps/011 BIG O of Binary Heaps.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\24 - Binary Heaps\\011 BIG O of Binary Heaps.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "ad8d084b-cc25-4fa0-855d-71abc250d04b",
+          "id": "0b411dc8-5487-41d4-9eb0-f9ad2406341f",
           "name": "25 - Hash Tables",
-          "relative_path": "25 - Hash Tables",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables",
           "type": "directory",
           "children": [
             {
-              "id": "66307bcf-3f42-40fa-b204-99a491adbd08",
+              "id": "cdf50e76-93b0-4638-9638-65fe2825f524",
               "name": "002 Intro to Hash Tables.mp4",
-              "relative_path": "25 - Hash Tables/002 Intro to Hash Tables.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\002 Intro to Hash Tables.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "801a099c-d8cd-4afd-9100-d4aad5ebc66b",
+              "id": "ae51a0ca-bbef-41b9-a819-249f3ef7cdaf",
               "name": "003 More About Hash Tables.mp4",
-              "relative_path": "25 - Hash Tables/003 More About Hash Tables.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\003 More About Hash Tables.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "fa170928-36d1-4895-8417-d167a7246d75",
+              "id": "04a6e20f-4b7f-4b7e-96da-073f4c2aee3b",
               "name": "004 Intro to Hash Functions.mp4",
-              "relative_path": "25 - Hash Tables/004 Intro to Hash Functions.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\004 Intro to Hash Functions.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a534ff91-2729-48d3-98f9-c6134520160a",
+              "id": "4a31a702-b5fd-400c-9a25-0263c4a77cf6",
               "name": "005 Writing Our First Hash Function.mp4",
-              "relative_path": "25 - Hash Tables/005 Writing Our First Hash Function.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\005 Writing Our First Hash Function.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "fbe6ec1d-c29e-49a6-992d-eb5869c58e8e",
+              "id": "7a99fe0a-0cd7-46fe-86b8-8b664d190756",
               "name": "006 Improving Our Hash Function.mp4",
-              "relative_path": "25 - Hash Tables/006 Improving Our Hash Function.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\006 Improving Our Hash Function.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "6c9012db-653e-4310-bf5e-c58a0d5e7aa0",
+              "id": "e0bbd927-4e56-4266-9007-7ec29ebc9578",
               "name": "007 Handling Collisions.mp4",
-              "relative_path": "25 - Hash Tables/007 Handling Collisions.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\007 Handling Collisions.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8d90ef51-987f-45d2-a2f6-a2c29a6cd735",
+              "id": "53866754-6a00-4482-ae20-a16b32f4e854",
               "name": "008 Hash Table Set and Get.mp4",
-              "relative_path": "25 - Hash Tables/008 Hash Table Set and Get.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\008 Hash Table Set and Get.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "164d1e68-6aa9-471e-8d12-a1ac1663b26c",
+              "id": "b92ad703-ba2a-4ae3-956f-623ad2a11260",
               "name": "009 Hash Table Set Solution.mp4",
-              "relative_path": "25 - Hash Tables/009 Hash Table Set Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\009 Hash Table Set Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "511d93fb-b91f-4682-9819-7e181b2202e2",
+              "id": "1e7db867-692a-4506-ba7c-ee3213ef6926",
               "name": "010 Hash Table Get Solution.mp4",
-              "relative_path": "25 - Hash Tables/010 Hash Table Get Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\010 Hash Table Get Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "172cfb04-94ea-4e2d-9476-32a5c9663c83",
+              "id": "65e570a0-0a90-42e5-9479-87edf2c0fbde",
               "name": "011 Hash Table Keys and Values.mp4",
-              "relative_path": "25 - Hash Tables/011 Hash Table Keys and Values.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\011 Hash Table Keys and Values.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "4a0c27fd-f81d-4711-8b0b-6b5c1ad9afdf",
+              "id": "616949e1-609f-4732-bcf4-4cfa6702b602",
               "name": "012 Hash Table Keys and Values Solution.mp4",
-              "relative_path": "25 - Hash Tables/012 Hash Table Keys and Values Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\012 Hash Table Keys and Values Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "6a51d732-87d6-42b9-a1fb-6222452c3456",
+              "id": "31cde36a-6471-488c-8498-1ee1195b0ca0",
               "name": "013 Hash Table Big O Complexity.mp4",
-              "relative_path": "25 - Hash Tables/013 Hash Table Big O Complexity.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\25 - Hash Tables\\013 Hash Table Big O Complexity.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "15f8d833-acc7-492d-ba63-795bb77cc065",
+          "id": "f18b6236-474c-40ab-8f45-b85791f743e3",
           "name": "26 - Graphs",
-          "relative_path": "26 - Graphs",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs",
           "type": "directory",
           "children": [
             {
-              "id": "822e6696-9b56-4cb7-b86c-2e846610c295",
+              "id": "c8a62e89-d3bd-4737-bb27-743400d0981a",
               "name": "002 Intro to Graphs.mp4",
-              "relative_path": "26 - Graphs/002 Intro to Graphs.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\002 Intro to Graphs.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "352697e7-2bc5-473a-ad28-435ee32401c5",
+              "id": "99457468-3d4b-4700-b285-e4a3a3c4aab0",
               "name": "003 Uses for Graphs.mp4",
-              "relative_path": "26 - Graphs/003 Uses for Graphs.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\003 Uses for Graphs.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f76b24ad-26e8-4743-b645-6fcd68485a37",
+              "id": "7eb92c4a-f7dd-47b0-b921-d45355f81497",
               "name": "004 Types of Graphs.mp4",
-              "relative_path": "26 - Graphs/004 Types of Graphs.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\004 Types of Graphs.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "6542f7d2-431d-489a-8543-6c1ba345ae20",
+              "id": "ba86d95f-f078-4304-b3b1-975d7b6603d4",
               "name": "005 Storing Graphs Adjacency Matrix.mp4",
-              "relative_path": "26 - Graphs/005 Storing Graphs Adjacency Matrix.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\005 Storing Graphs Adjacency Matrix.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "f06e3c69-6ce4-4b32-a60c-ce6fd07c7a35",
+              "id": "b99aead5-e015-4565-8129-7ec354f17db5",
               "name": "006 Storing Graphs Adjacency List.mp4",
-              "relative_path": "26 - Graphs/006 Storing Graphs Adjacency List.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\006 Storing Graphs Adjacency List.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ffd3a28f-0e18-4ab2-b5b5-37b157c1be7f",
+              "id": "70f86f35-c4d9-420d-8170-fb992bab548f",
               "name": "007 Adjacency Matrix Vs. List BIG O.mp4",
-              "relative_path": "26 - Graphs/007 Adjacency Matrix Vs. List BIG O.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\007 Adjacency Matrix Vs. List BIG O.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c3ebf65f-2379-4a37-b776-00ac0b38345f",
+              "id": "1b0b3668-d8f7-41f9-ae0d-63b44ee6b6ba",
               "name": "008 Add Vertex Intro.mp4",
-              "relative_path": "26 - Graphs/008 Add Vertex Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\008 Add Vertex Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "199c54d2-57a5-44ba-9b17-5fc1137177e9",
+              "id": "db4b6143-e91c-44cd-b8f9-9bd7ff2f390d",
               "name": "009 Add Vertex Solution.mp4",
-              "relative_path": "26 - Graphs/009 Add Vertex Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\009 Add Vertex Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "70d11be7-30bc-4b4f-8542-a639ae12559e",
+              "id": "9ab443e2-5964-4a1f-9334-f29dbcafab03",
               "name": "010 Add Edge Intro.mp4",
-              "relative_path": "26 - Graphs/010 Add Edge Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\010 Add Edge Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "da30aa5e-95bd-45cc-8bd2-74505d78de97",
+              "id": "1a80efe9-dd5a-4171-ac08-efa1913f27d8",
               "name": "011 Add Edge Solution.mp4",
-              "relative_path": "26 - Graphs/011 Add Edge Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\011 Add Edge Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a0f54d5e-acd0-43c6-a0f2-45fb4cc3b38b",
+              "id": "da4caf8a-151e-4af7-a53a-9897a2bc9fb7",
               "name": "012 Remove Edge Intro.mp4",
-              "relative_path": "26 - Graphs/012 Remove Edge Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\012 Remove Edge Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "e0151bb1-86fd-41e4-8f1c-008f7418042f",
+              "id": "11851ff5-39e0-4583-9de5-2f0e6f2822cd",
               "name": "013 Remove Edge Solution.mp4",
-              "relative_path": "26 - Graphs/013 Remove Edge Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\013 Remove Edge Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c20e0df4-7696-4d11-abe8-826e294411bc",
+              "id": "796d3203-72c3-4198-b76c-2ec0e2849d4b",
               "name": "014 Remove Vertex Intro.mp4",
-              "relative_path": "26 - Graphs/014 Remove Vertex Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\014 Remove Vertex Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "6442708e-188f-44fc-9863-fdaf7c5d405a",
+              "id": "ec5f69e4-94b5-41ca-81ed-545399807f47",
               "name": "015 Remove Vertex Solution.mp4",
-              "relative_path": "26 - Graphs/015 Remove Vertex Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\26 - Graphs\\015 Remove Vertex Solution.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "e2996c54-8792-48d1-9ad2-9e8e187dff20",
+          "id": "54d6b236-2ea9-4caf-88f5-1df8aab20129",
           "name": "27 - Graph Traversal",
-          "relative_path": "27 - Graph Traversal",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal",
           "type": "directory",
           "children": [
             {
-              "id": "34110f8f-614d-4029-bed8-dd0678db13a0",
+              "id": "5ccb12a1-c6df-4313-b871-3f6c253e43a7",
               "name": "002 Intro to Graph Traversal.mp4",
-              "relative_path": "27 - Graph Traversal/002 Intro to Graph Traversal.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\002 Intro to Graph Traversal.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a969b410-d88f-4884-8059-9e407cc3a765",
+              "id": "a1b34a3a-4ec2-46c3-ac15-63d590296bfb",
               "name": "003 Depth First Graph Traversal.mp4",
-              "relative_path": "27 - Graph Traversal/003 Depth First Graph Traversal.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\003 Depth First Graph Traversal.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a32678bf-c9be-4a33-a9ce-db4520558894",
+              "id": "8d95430e-a06d-40ff-8618-0545ef09eb26",
               "name": "004 DFS Recursive Intro.mp4",
-              "relative_path": "27 - Graph Traversal/004 DFS Recursive Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\004 DFS Recursive Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "1174adc8-a4ca-4263-82aa-8944fba85697",
+              "id": "d22d06ac-c69e-4f89-8fe4-a5b224cf7d89",
               "name": "005 DFS Recursive Solution.mp4",
-              "relative_path": "27 - Graph Traversal/005 DFS Recursive Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\005 DFS Recursive Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ee20ec53-e45f-4235-b00a-a4e9a961405a",
+              "id": "a9120f53-c79d-4784-9955-2922083ebd06",
               "name": "006 DFS Iterative Intro.mp4",
-              "relative_path": "27 - Graph Traversal/006 DFS Iterative Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\006 DFS Iterative Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "23dd1bf0-2971-4b20-9c0f-13a70b4f46e0",
+              "id": "4f99a6ea-3660-4347-90b7-01a9bed4c9c7",
               "name": "007 DFS Iterative Solution.mp4",
-              "relative_path": "27 - Graph Traversal/007 DFS Iterative Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\007 DFS Iterative Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "c54d4db3-267d-44f7-9c4a-3cd0e073ee2d",
+              "id": "41203f4a-bc75-4d66-bbd1-ed72b6eb6f41",
               "name": "008 Breadth First Graph Traversal.mp4",
-              "relative_path": "27 - Graph Traversal/008 Breadth First Graph Traversal.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\008 Breadth First Graph Traversal.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "0a2939fc-ce78-41cf-ac43-e39e59d02458",
+              "id": "3b07ef7d-fd0a-42d2-9d16-4a0e1b4938fe",
               "name": "009 BFS Intro.mp4",
-              "relative_path": "27 - Graph Traversal/009 BFS Intro.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\009 BFS Intro.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "7ea76112-65b0-445f-ad76-684c9ee2904a",
+              "id": "1c48b59b-4232-45fd-a0b7-4b874ab68773",
               "name": "010 BFS Solution.mp4",
-              "relative_path": "27 - Graph Traversal/010 BFS Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\27 - Graph Traversal\\010 BFS Solution.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "1a82fd85-cfcf-443c-97b2-e7f8093efb91",
+          "id": "a05fa20a-8664-4b75-8c02-75f83e722fc2",
           "name": "28 - Dijkstra's Algorithm!",
-          "relative_path": "28 - Dijkstra's Algorithm!",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!",
           "type": "directory",
           "children": [
             {
-              "id": "e909fea4-516b-496e-a5d3-770d530e7ec7",
+              "id": "a67cb868-adde-47bb-839f-51682556df42",
               "name": "002 Intro to Dijkstra's and Prerequisites.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/002 Intro to Dijkstra's and Prerequisites.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\002 Intro to Dijkstra's and Prerequisites.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "ca02ce2d-5b79-451e-943c-bc9007eb0e07",
+              "id": "f5240da9-7d25-4a96-a95b-453ab0b7e477",
               "name": "003 Who was Dijkstra and what is his Algorithm.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/003 Who was Dijkstra and what is his Algorithm.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\003 Who was Dijkstra and what is his Algorithm.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "cdc15960-8077-45bb-b567-1cc16ecbe043",
+              "id": "ee341e36-91e8-446b-a446-1d5480409e7e",
               "name": "004 Writing a Weighted Graph.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/004 Writing a Weighted Graph.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\004 Writing a Weighted Graph.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "aba6052d-7ba6-41e7-8fa5-6f21df97db1e",
+              "id": "92d55159-f1da-4398-b6ec-8244e35afe45",
               "name": "005 Walking through the Algorithm.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/005 Walking through the Algorithm.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\005 Walking through the Algorithm.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "3835aecd-0c4b-4453-b620-97580dd5408c",
+              "id": "7c5e0eca-ce4b-4a48-a2ac-8ca3495767b2",
               "name": "006 Introducing Our Simple Priority Queue.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/006 Introducing Our Simple Priority Queue.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\006 Introducing Our Simple Priority Queue.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "55aa8d0c-f13d-440e-b7ef-f636e8e47006",
+              "id": "d087b91f-92fb-4e9f-8d01-1ecbebf6aafd",
               "name": "007 Dijkstra's Pseudo-Code.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/007 Dijkstra's Pseudo-Code.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\007 Dijkstra's Pseudo-Code.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "49d2631d-c0ce-4f31-ba7a-2a1701f903d0",
+              "id": "46c814cd-58c2-4622-a35a-19fb8970dd4d",
               "name": "008 Implementing Dijkstra's Algorithm.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/008 Implementing Dijkstra's Algorithm.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\008 Implementing Dijkstra's Algorithm.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "fdc9b307-ace4-4851-aadd-ea9cc9f4f2cc",
+              "id": "caddde49-f5d8-4238-9d1d-f7e09c77d392",
               "name": "009 Upgrading the Priority Queue.mp4",
-              "relative_path": "28 - Dijkstra's Algorithm!/009 Upgrading the Priority Queue.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\28 - Dijkstra's Algorithm!\\009 Upgrading the Priority Queue.mp4",
               "type": "video",
               "children": []
             }
           ]
         },
         {
-          "id": "66350fc5-550d-4631-bfc9-ab0036da17e7",
+          "id": "8f72dcea-7da5-40d0-af62-e7245c02dc97",
           "name": "29 - Dynamic Programming",
-          "relative_path": "29 - Dynamic Programming",
+          "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming",
           "type": "directory",
           "children": [
             {
-              "id": "78da0139-de39-4ba8-a5f7-4c419e9d1b83",
+              "id": "1d7e5d4e-6a57-4421-9e66-f761329242de",
               "name": "001 Intro to Dynamic Programming.mp4",
-              "relative_path": "29 - Dynamic Programming/001 Intro to Dynamic Programming.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\001 Intro to Dynamic Programming.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "8592dd05-c99a-47af-a63a-d0d622e5a15c",
+              "id": "cb1ad4bc-1738-4ccd-a990-d1389c836120",
               "name": "002 Overlapping Subproblems.mp4",
-              "relative_path": "29 - Dynamic Programming/002 Overlapping Subproblems.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\002 Overlapping Subproblems.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "9819a548-bbc2-405f-8553-a5d6fb5053b9",
+              "id": "e14c97a3-cd38-42f5-aa3f-1cfe74400189",
               "name": "003 Optimal Substructure.mp4",
-              "relative_path": "29 - Dynamic Programming/003 Optimal Substructure.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\003 Optimal Substructure.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "db300a88-5ed1-4ff4-a2cb-5bfbb6ef1856",
+              "id": "2b141b19-4d99-4163-9416-157fad36b299",
               "name": "004 Writing A Recursive Solution.mp4",
-              "relative_path": "29 - Dynamic Programming/004 Writing A Recursive Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\004 Writing A Recursive Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "83d121e0-120a-4f49-96f9-b418c247db0f",
+              "id": "b9ca2281-34fb-450a-b555-5c92d8a3eab1",
               "name": "005 Time Complexity of Our Solution.mp4",
-              "relative_path": "29 - Dynamic Programming/005 Time Complexity of Our Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\005 Time Complexity of Our Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "82d3809d-1ac0-498c-922b-4963bb71bcbc",
+              "id": "70eb0dd1-d53a-4740-aa61-943c0fb23f63",
               "name": "006 The Problem With Our Solution.mp4",
-              "relative_path": "29 - Dynamic Programming/006 The Problem With Our Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\006 The Problem With Our Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "a6bd5d09-f7c4-42b5-b7af-a6f4cf6787e4",
+              "id": "2dd0f9ad-62fd-4f61-9f97-65c939abc016",
               "name": "007 Enter Memoization!.mp4",
-              "relative_path": "29 - Dynamic Programming/007 Enter Memoization!.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\007 Enter Memoization!.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "5f80118c-577d-4b4c-8efc-89eceff42720",
+              "id": "610b03ab-8181-4140-b6b2-7dbe03135f92",
               "name": "008 Time Complexity of Memoized Solution.mp4",
-              "relative_path": "29 - Dynamic Programming/008 Time Complexity of Memoized Solution.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\008 Time Complexity of Memoized Solution.mp4",
               "type": "video",
               "children": []
             },
             {
-              "id": "837fa4f9-ec51-4eae-8e43-1d633aaf0c0b",
+              "id": "5cbbd6ad-5e94-49f7-907a-9a3c339e2f58",
               "name": "009 Tabulation A Bottom Up Approach.mp4",
-              "relative_path": "29 - Dynamic Programming/009 Tabulation A Bottom Up Approach.mp4",
+              "path": "D:\\Courses\\JavaScript Algorithms and Data Structures Masterclass\\Udemy - JavaScript Algorithms and Data Structures Masterclass\\29 - Dynamic Programming\\009 Tabulation A Bottom Up Approach.mp4",
               "type": "video",
               "children": []
             }

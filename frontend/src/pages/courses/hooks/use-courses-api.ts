@@ -3,8 +3,7 @@ import { useCallback } from 'react';
 export interface TreeNode {
   id: string;
   name: string;
-  path?: string;
-  relative_path?: string;
+  path: string;
   type: 'directory' | 'video';
   children: TreeNode[];
 }
@@ -21,23 +20,6 @@ export interface Course extends CourseSummary {
   created_at: string;
 }
 
-export function getFullPath(rootPath: string, relativePath: string): string {
-  if (!relativePath || relativePath === '.') {
-    return rootPath;
-  }
-  const cleanPath = relativePath
-    .replace(/^\.\//, '')
-    .replace(/^\/+/, '')
-    .replace(/^\\+/, '');
-
-  rootPath = rootPath.replace(/\\/g, '/');
-
-  if (rootPath.endsWith('/')) {
-    return rootPath + cleanPath;
-  }
-  return rootPath + '/' + cleanPath;
-}
-
 declare global {
   interface Window {
     pywebview?: {
@@ -46,8 +28,6 @@ declare global {
         add_course: (folderPath: string) => Promise<CourseSummary & { error?: string }>;
         get_course: (id: string) => Promise<Course | { error: string }>;
         remove_course: (id: string) => Promise<boolean>;
-        get_video_url: (rootPath: string, relativePath: string) => string;
-        open_in_system_player: (rootPath: string, relativePath: string) => void;
         refresh_page: () => void;
         open_folder_dialog: () => Promise<{ folder_path?: string; error?: string }>;
       };
@@ -114,13 +94,6 @@ export function useCourses() {
     }
   }, []);
 
-  const getVideoUrl = useCallback(() => {
-    return '';
-  }, []);
-
-  const openInSystemPlayer = useCallback(() => {
-  }, []);
-
   const refreshPage = useCallback(() => {
     try {
       const api = getApi();
@@ -135,8 +108,6 @@ export function useCourses() {
     getCourse,
     addCourse,
     removeCourse,
-    getVideoUrl,
-    openInSystemPlayer,
     refreshPage,
   };
 }

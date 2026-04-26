@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { usePreferences } from '../../../settings/hooks/use-preferences';
 import { useLessonProgress } from '../../hooks/use-lesson-progress';
 import { useCourses } from '../../hooks/use-courses-api';
+import type { TreeNode } from '../../hooks/use-courses-api';
 
 const API_BASE = 'http://127.0.0.1:8000/api/v1';
 
@@ -13,19 +14,15 @@ interface FlatLesson {
   id: string;
   name: string;
   path: string;
-  fullPath: string;
 }
 
-function flattenTree(node: any, rootPath: string = ''): FlatLesson[] {
-  const basePath = rootPath;
+function flattenTree(node: TreeNode): FlatLesson[] {
   if (node.type === 'video') {
-    const relPath = node.relative_path || node.path || '';
-    const fullPath = basePath ? `${basePath}/${relPath}`.replace(/\\/g, '/') : relPath;
-    return [{ id: node.id || `fallback-${node.name}`, name: node.name, path: relPath, fullPath }];
+    return [{ id: node.id, name: node.name, path: node.path }];
   }
   const lessons: FlatLesson[] = [];
   for (const child of node.children || []) {
-    lessons.push(...flattenTree(child, basePath));
+    lessons.push(...flattenTree(child));
   }
   return lessons;
 }
@@ -43,7 +40,7 @@ export default function CoursePlayPage() {
 
   const lessonId = useMemo(() => {
     const idFromUrl = searchParams.get('lessonId');
-    return idFromUrl || (path ? `fallback-${path}` : '');
+    return idFromUrl || path;
   }, [searchParams, path]);
 
   const isCompleted = lessonId ? isLessonCompleted(lessonId) : false;
@@ -60,7 +57,7 @@ export default function CoursePlayPage() {
 
     setLoading(true);
     setVideoSrc(`${API_BASE}/video/${encodeURIComponent(path)}`);
-    const parts = path.split('/');
+    const parts = path.split(/[\\/]/);
     const lastPart = parts[parts.length - 1];
     setLessonTitle(lastPart?.split('.')[0]?.replace(/-/g, ' ') || 'Untitled Lesson');
   }, [path]);
@@ -71,11 +68,10 @@ export default function CoursePlayPage() {
     const loadLessons = async () => {
       const course = await getCourse(courseId);
       if (course?.tree) {
-        const rootPath = course.root_path || '';
-        const allLessons = flattenTree(course.tree, rootPath);
+        const allLessons = flattenTree(course.tree);
         setLessons(allLessons);
 
-        const currentIndex = allLessons.findIndex(l => l.id === lessonId || l.fullPath === path);
+        const currentIndex = allLessons.findIndex(l => l.id === lessonId || l.path === path);
         setPrevLesson(currentIndex > 0 ? allLessons[currentIndex - 1] : null);
         setNextLesson(currentIndex < allLessons.length - 1 ? allLessons[currentIndex + 1] : null);
       }
@@ -98,13 +94,13 @@ export default function CoursePlayPage() {
 
   const handlePrevLesson = () => {
     if (prevLesson) {
-      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(prevLesson.fullPath)}&lessonId=${prevLesson.id}`);
+      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(prevLesson.path)}&lessonId=${prevLesson.id}`);
     }
   };
 
   const handleNextLesson = () => {
     if (nextLesson) {
-      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(nextLesson.fullPath)}&lessonId=${nextLesson.id}`);
+      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(nextLesson.path)}&lessonId=${nextLesson.id}`);
     }
   };
 
@@ -172,7 +168,7 @@ export default function CoursePlayPage() {
               Previous
             </Button>
             <span className="text-sm text-muted-foreground">
-              {lessons.findIndex(l => l.id === lessonId || l.fullPath === path) + 1} / {lessons.length}
+              {lessons.findIndex(l => l.id === lessonId || l.path === path) + 1} / {lessons.length}
             </span>
             <Button variant="outline" onClick={handleNextLesson} disabled={!nextLesson}>
               Next

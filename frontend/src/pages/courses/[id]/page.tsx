@@ -19,26 +19,21 @@ export default function CourseDetailsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setCourseId(courseId || null);
-  }, [courseId, setCourseId]);
-
-  useEffect(() => {
+    if (!courseId) return;
     let cancelled = false;
-    
+    setCourseId(courseId);
+
     async function load() {
-      if (courseId) {
-        const data = await getCourse(courseId);
-        if (!cancelled) {
-          setCourse(data);
-          setLoading(false);
-        }
+      const data = await getCourse(courseId);
+      if (!cancelled) {
+        setCourse(data);
+        setLoading(false);
       }
     }
-    
+
     load();
-    
     return () => { cancelled = true; };
-  }, [courseId]);
+  }, [courseId, setCourseId]);
 
   const handlePlay = (fullPath: string, lessonId: string) => {
     if (preferExternal) {
@@ -78,7 +73,7 @@ export default function CourseDetailsPage() {
       <h1 className="text-2xl font-bold mb-1">{course.name}</h1>
       <p className="text-muted-foreground text-sm mb-6">{course.root_path}</p>
 
-      <CourseTree node={course.tree as any} rootPath={course.root_path} onPlay={handlePlay} />
+      <CourseTree node={course.tree} onPlay={handlePlay} />
     </div>
   );
 }

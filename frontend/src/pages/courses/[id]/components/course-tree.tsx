@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { FolderIcon, VideoIcon, ChevronDown, ChevronRight, CheckmarkCircle01Icon } from '@hugeicons/core-free-icons';
 import { useTreeState } from './course-tree-context';
@@ -6,45 +7,36 @@ import { useLessonProgress } from '../../hooks/use-lesson-progress';
 interface TreeNode {
   id: string;
   name: string;
-  path?: string;
-  relative_path?: string;
+  path: string;
   type: 'directory' | 'video';
   children: TreeNode[];
 }
 
 interface CourseTreeProps {
   node: TreeNode;
-  rootPath: string;
   onPlay?: (fullPath: string, lessonId: string) => void;
   onNavigate?: (fullPath: string) => void;
   level?: number;
 }
 
-export function CourseTree({ node, rootPath, onPlay, onNavigate, level = 0 }: CourseTreeProps) {
-  const { isNodeCollapsed, toggleNode } = useTreeState();
+export const CourseTree = memo(function CourseTree({ node, onPlay, onNavigate, level = 0 }: CourseTreeProps) {
+  const { isNodeExpanded, toggleNode } = useTreeState();
   const { isLessonCompleted } = useLessonProgress();
 
   const hasChildren = node.children && node.children.length > 0;
-  const isExpanded = !isNodeCollapsed(node.id);
-  const isCompleted = node.type === 'video' ? isLessonCompleted(node.id || `fallback-${node.name}`) : false;
+  const nodeId = node.id || '';
+  const isExpanded = isNodeExpanded(nodeId);
+  const isCompleted = node.type === 'video' ? isLessonCompleted(node.id) : false;
 
   const handleToggle = (e: React.MouseEvent) => {
     e.stopPropagation();
-    toggleNode(node.id);
-  };
-
-  const getFullPath = (n: TreeNode): string => {
-    const pathField = n.relative_path || n.path || '';
-    if (pathField && (pathField.startsWith('D:') || pathField.startsWith('/') || pathField.includes(':'))) {
-      return pathField;
-    }
-    return rootPath + '/' + pathField;
+    if (nodeId) toggleNode(nodeId);
   };
 
   const handlePlay = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (onPlay && node.type === 'video') {
-      onPlay(getFullPath(node), node.id);
+      onPlay(node.path, node.id);
     }
   };
 
@@ -98,9 +90,8 @@ export function CourseTree({ node, rootPath, onPlay, onNavigate, level = 0 }: Co
         <div>
           {node.children.map((child, index) => (
             <CourseTree
-              key={`${child.relative_path || child.path || index}-${index}`}
+              key={child.id || child.path || index}
               node={child}
-              rootPath={rootPath}
               onPlay={onPlay}
               onNavigate={onNavigate}
               level={level + 1}
@@ -110,4 +101,4 @@ export function CourseTree({ node, rootPath, onPlay, onNavigate, level = 0 }: Co
       )}
     </div>
   );
-}
+});

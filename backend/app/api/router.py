@@ -14,11 +14,14 @@ api_router.include_router(exam.router)
 async def get_video(full_path: str):
     from urllib.parse import unquote
     from pathlib import Path
-    
-    video_path = Path(unquote(full_path))
+
+    unquoted = unquote(full_path).replace('/', '\\')
+    video_path = Path(unquoted)
+
     if not video_path.exists():
+        print(f"[VIDEO] File not found: {video_path}")
         return {"error": "File not found"}
-    
+
     return FileResponse(
         video_path,
         media_type="video/mp4",
