@@ -13,7 +13,7 @@ import {
   SidebarRail,
 } from '@/components/ui/sidebar';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { Settings01Icon, FolderLibraryIcon } from '@hugeicons/core-free-icons';
+import { FolderLibraryIcon } from '@hugeicons/core-free-icons';
 
 // This is sample data.
 const data = {
@@ -27,11 +27,6 @@ const data = {
       title: 'Courses',
       url: '/courses',
       icon: <HugeiconsIcon icon={FolderLibraryIcon} strokeWidth={2} />,
-    },
-    {
-      title: 'Settings',
-      url: '/settings',
-      icon: <HugeiconsIcon icon={Settings01Icon} strokeWidth={2} />,
     },
   ],
 };

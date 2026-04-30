@@ -7,7 +7,6 @@ import { CourseTree } from './components/course-tree';
 import { ProgressProvider, useProgress } from './components/progress-context';
 import { useCourses } from '../hooks/use-courses-api';
 import type { Course } from '../hooks/use-courses-api';
-import { usePreferences } from '../../settings/hooks/use-preferences';
 import { useTreeState } from './components/course-tree-context';
 
 function ProgressBar() {
@@ -39,26 +38,22 @@ function ProgressBar() {
 function CourseDetailsContent({ course }: { course: Course }) {
   const { courseId } = useParams();
   const navigate = useNavigate();
-  const { preferExternal } = usePreferences();
 
   const handlePlay = (fullPath: string, lessonId: string) => {
-    if (preferExternal) {
-      const w = window as any;
-      if (w.pywebview?.api) {
-        w.pywebview.api.open_in_system_player(fullPath);
-      }
-    } else {
-      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(fullPath)}&lessonId=${lessonId}`);
-    }
+    navigate(`/courses/${courseId}/play?path=${encodeURIComponent(fullPath)}&lessonId=${lessonId}`);
   };
 
   return (
     <div className="p-6">
-      <Button variant="ghost" onClick={() => navigate('/courses')} className="mb-4">
-        <HugeiconsIcon icon={ArrowLeftIcon} className="h-4 w-4 mr-2" />
+      <Button
+        variant="ghost"
+        onClick={() => navigate('/courses')}
+        className="mb-4"
+      >
+        <HugeiconsIcon icon={ArrowLeftIcon} className="h-4 w-4" />
         Back to Courses
       </Button>
-      
+
       <h1 className="text-2xl font-bold mb-1">{course.name}</h1>
       <p className="text-muted-foreground text-sm mb-4">{course.root_path}</p>
 
@@ -66,7 +61,9 @@ function CourseDetailsContent({ course }: { course: Course }) {
         <ProgressBar />
       </div>
 
-      <CourseTree node={course.tree} onPlay={handlePlay} />
+      {course.tree.children.map((child) => (
+        <CourseTree key={child.id} node={child} onPlay={handlePlay} />
+      ))}
     </div>
   );
 }
@@ -93,7 +90,9 @@ export default function CourseDetailsPage() {
     }
 
     load();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [courseId, setCourseId]);
 
   if (loading) {

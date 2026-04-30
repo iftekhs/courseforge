@@ -10,7 +10,7 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import CoursesPage from './pages/courses/page';
 import CourseDetailsPage from './pages/courses/[id]/page';
 import CoursePlayPage from './pages/courses/[id]/play/page';
-import SettingsPage from './pages/settings/page';
+
 import { TreeStateProvider } from './pages/courses/[id]/components/course-tree-context';
 import { ThemeToggle } from './components/theme-toggle';
 
@@ -55,7 +55,7 @@ function App() {
           <Route path="courses" element={<CoursesPage />} />
           <Route path="courses/:courseId" element={<CourseDetailsPage />} />
           <Route path="courses/:courseId/play" element={<CoursePlayPage />} />
-          <Route path="settings" element={<SettingsPage />} />
+          
         </Route>
       </Routes>
     </TooltipProvider>

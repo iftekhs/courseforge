@@ -1,21 +1,4 @@
-const PREFER_EXTERNAL_KEY = 'preferExternalPlayer';
 const DARK_MODE_KEY = 'darkMode';
-
-export function getPlaybackPreference(): boolean {
-  try {
-    return localStorage.getItem(PREFER_EXTERNAL_KEY) === 'true';
-  } catch {
-    return false;
-  }
-}
-
-export function setPlaybackPreference(external: boolean): void {
-  try {
-    localStorage.setItem(PREFER_EXTERNAL_KEY, String(external));
-  } catch {
-    // Silently fail
-  }
-}
 
 export function getDarkModePreference(): boolean {
   try {
@@ -38,12 +21,7 @@ export function setDarkModePreference(dark: boolean): void {
 }
 
 export function usePreferences() {
-  const preferExternal = getPlaybackPreference();
   const darkMode = getDarkModePreference();
-
-  const setPreference = (external: boolean) => {
-    setPlaybackPreference(external);
-  };
 
   const setDarkMode = (dark: boolean) => {
     setDarkModePreference(dark);
@@ -55,8 +33,6 @@ export function usePreferences() {
   };
 
   return {
-    preferExternal,
-    setPreference,
     darkMode,
     setDarkMode,
   };

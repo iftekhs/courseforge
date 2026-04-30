@@ -1,10 +1,13 @@
 import { useEffect, useState, useMemo } from 'react';
 import { useSearchParams, useNavigate, useParams } from 'react-router-dom';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { ArrowLeftIcon, ArrowRight02Icon, Link01Icon, CheckmarkCircle01Icon } from '@hugeicons/core-free-icons';
+import {
+  ArrowLeftIcon,
+  ArrowRight02Icon,
+  CheckmarkCircle01Icon,
+} from '@hugeicons/core-free-icons';
 import { Button } from '@/components/ui/button';
 import VideoPlayer from '@/components/ui/video-player';
-import { usePreferences } from '../../../settings/hooks/use-preferences';
 import { useLessonProgress } from '../../hooks/use-lesson-progress';
 import { useCourses } from '../../hooks/use-courses-api';
 import type { TreeNode } from '../../hooks/use-courses-api';
@@ -32,7 +35,6 @@ export default function CoursePlayPage() {
   const { courseId } = useParams();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const { preferExternal } = usePreferences();
   const { getCourse } = useCourses();
 
   const rawPath = searchParams.get('path') || '';
@@ -53,14 +55,17 @@ export default function CoursePlayPage() {
 
   useEffect(() => {
     if (!courseId) return;
-    getCourse(courseId).then(data => {
+    getCourse(courseId).then((data) => {
       if (data) setCourse(data);
     });
   }, [courseId]);
 
-  const { isLessonCompleted, markLessonInProgress, toggleLessonComplete, isLessonInProgress } = useLessonProgress(
-    course?.root_path || ''
-  );
+  const {
+    isLessonCompleted,
+    markLessonInProgress,
+    toggleLessonComplete,
+    isLessonInProgress,
+  } = useLessonProgress(course?.root_path || '');
 
   const isCompleted = path ? isLessonCompleted(path) : false;
   const inProgress = path ? isLessonInProgress(path) : false;
@@ -72,7 +77,9 @@ export default function CoursePlayPage() {
     setVideoSrc(`${API_BASE}/video/${encodeURIComponent(path)}`);
     const parts = path.split(/[\\/]/);
     const lastPart = parts[parts.length - 1];
-    setLessonTitle(lastPart?.split('.')[0]?.replace(/-/g, ' ') || 'Untitled Lesson');
+    setLessonTitle(
+      lastPart?.split('.')[0]?.replace(/-/g, ' ') || 'Untitled Lesson',
+    );
   }, [path]);
 
   useEffect(() => {
@@ -84,9 +91,15 @@ export default function CoursePlayPage() {
         const allLessons = flattenTree(courseData.tree);
         setLessons(allLessons);
 
-        const currentIndex = allLessons.findIndex(l => l.id === lessonId || l.path === path);
+        const currentIndex = allLessons.findIndex(
+          (l) => l.id === lessonId || l.path === path,
+        );
         setPrevLesson(currentIndex > 0 ? allLessons[currentIndex - 1] : null);
-        setNextLesson(currentIndex < allLessons.length - 1 ? allLessons[currentIndex + 1] : null);
+        setNextLesson(
+          currentIndex < allLessons.length - 1
+            ? allLessons[currentIndex + 1]
+            : null,
+        );
       }
     };
     loadLessons();
@@ -98,13 +111,6 @@ export default function CoursePlayPage() {
     }
   }, [path, course?.root_path, inProgress, isCompleted]);
 
-  const handleOpenExternal = () => {
-    const w = window as any;
-    if (w.pywebview?.api) {
-      w.pywebview.api.open_in_system_player(path);
-    }
-  };
-
   const handleMarkCompleted = () => {
     if (path) {
       toggleLessonComplete(path);
@@ -113,13 +119,17 @@ export default function CoursePlayPage() {
 
   const handlePrevLesson = () => {
     if (prevLesson) {
-      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(prevLesson.path)}&lessonId=${prevLesson.id}`);
+      navigate(
+        `/courses/${courseId}/play?path=${encodeURIComponent(prevLesson.path)}&lessonId=${prevLesson.id}`,
+      );
     }
   };
 
   const handleNextLesson = () => {
     if (nextLesson) {
-      navigate(`/courses/${courseId}/play?path=${encodeURIComponent(nextLesson.path)}&lessonId=${nextLesson.id}`);
+      navigate(
+        `/courses/${courseId}/play?path=${encodeURIComponent(nextLesson.path)}&lessonId=${nextLesson.id}`,
+      );
     }
   };
 
@@ -135,8 +145,11 @@ export default function CoursePlayPage() {
   return (
     <div className="p-6">
       <div className="flex items-center gap-4 mb-6">
-        <Button variant="ghost" onClick={() => navigate(`/courses/${courseId}`)}>
-          <HugeiconsIcon icon={ArrowLeftIcon} className="h-4 w-4 mr-2" />
+        <Button
+          variant="ghost"
+          onClick={() => navigate(`/courses/${courseId}`)}
+        >
+          <HugeiconsIcon icon={ArrowLeftIcon} className="h-4 w-4" />
           Back
         </Button>
       </div>
@@ -147,20 +160,14 @@ export default function CoursePlayPage() {
         <div className="mt-4 text-left">
           <h2 className="text-xl font-semibold capitalize">{lessonTitle}</h2>
           <div className="flex items-center gap-3 mt-3">
-            {!preferExternal && (
-              <Button variant="outline" onClick={handleOpenExternal}>
-                <HugeiconsIcon icon={Link01Icon} className="h-4 w-4 mr-2" />
-                Open in System Player
-              </Button>
-            )}
             {path && (
               <Button
-                variant={isCompleted ? "default" : "outline"}
+                variant={isCompleted ? 'default' : 'outline'}
                 onClick={handleMarkCompleted}
               >
                 <HugeiconsIcon
                   icon={CheckmarkCircle01Icon}
-                  className="h-4 w-4 mr-2"
+                  className="h-4 w-4"
                 />
                 {isCompleted ? 'Completed' : 'Mark as Completed'}
               </Button>
@@ -168,14 +175,24 @@ export default function CoursePlayPage() {
           </div>
 
           <div className="flex items-center justify-between mt-4 pt-4 border-t">
-            <Button variant="outline" onClick={handlePrevLesson} disabled={!prevLesson}>
-              <HugeiconsIcon icon={ArrowLeftIcon} className="h-4 w-4 mr-2" />
+            <Button
+              variant="outline"
+              onClick={handlePrevLesson}
+              disabled={!prevLesson}
+            >
+              <HugeiconsIcon icon={ArrowLeftIcon} className="h-4 w-4" />
               Previous
             </Button>
             <span className="text-sm text-muted-foreground">
-              {lessons.findIndex(l => l.id === lessonId || l.path === path) + 1} / {lessons.length}
+              {lessons.findIndex((l) => l.id === lessonId || l.path === path) +
+                1}{' '}
+              / {lessons.length}
             </span>
-            <Button variant="outline" onClick={handleNextLesson} disabled={!nextLesson}>
+            <Button
+              variant="outline"
+              onClick={handleNextLesson}
+              disabled={!nextLesson}
+            >
               Next
               <HugeiconsIcon icon={ArrowRight02Icon} className="h-4 w-4 ml-2" />
             </Button>
