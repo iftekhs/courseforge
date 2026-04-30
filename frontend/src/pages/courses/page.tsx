@@ -31,7 +31,7 @@ export default function CoursesPage() {
           setCourses(result || []);
           break;
         }
-        await new Promise(r => setTimeout(r, 200));
+        await new Promise((r) => setTimeout(r, 200));
         attempts++;
       }
     } catch (err) {
@@ -72,7 +72,7 @@ export default function CoursesPage() {
       if (!api) return;
 
       await api.remove_course(id);
-      setCourses(courses.filter(c => c.id !== id));
+      setCourses(courses.filter((c) => c.id !== id));
     } catch (err) {
       console.error('Error removing course:', err);
     }
@@ -106,7 +106,11 @@ export default function CoursesPage() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {courses.map((course) => (
-            <CourseCard key={course.id} course={course} onRemove={handleRemoveCourse} />
+            <CourseCard
+              key={course.id}
+              course={course}
+              onRemove={handleRemoveCourse}
+            />
           ))}
         </div>
       )}
