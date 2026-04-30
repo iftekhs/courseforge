@@ -19,7 +19,6 @@ async def get_video(full_path: str):
     video_path = Path(unquoted)
 
     if not video_path.exists():
-        print(f"[VIDEO] File not found: {video_path}")
         return {"error": "File not found"}
 
     return FileResponse(

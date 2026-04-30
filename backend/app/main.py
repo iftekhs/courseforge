@@ -26,38 +26,25 @@ def create_api_app() -> FastAPI:
     return app
 
 
-def wait_for_vite(vite_dir: Path, timeout: int = 30) -> str:
-    """Wait for Vite to start and return the URL."""
-    import socket
-    import re
+def wait_for_vite(vite_dir: Path) -> str:
+    """Start Vite and return the URL."""
+    import subprocess
+    import os
     
-    # Start Vite in background
-    proc = subprocess.Popen(
-        ["npm", "run", "dev"],
+    # Start Vite in a new console window on Windows
+    subprocess.Popen(
+        "npm run dev",
         cwd=str(vite_dir),
         shell=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True
+        creationflags=subprocess.CREATE_NEW_CONSOLE if os.name == 'nt' else 0,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL
     )
     
-    # Read output until we get the URL
-    start_time = time.time()
-    url = "http://127.0.0.1:5173"
+    # Wait for Vite to start
+    time.sleep(3)
     
-    for line in proc.stdout:
-        print(f"[Vite] {line.rstrip()}")
-        
-        # Look for the URL in the output
-        match = re.search(r'Local:\s*+(https?://[^\s]+)', line)
-        if match:
-            url = match.group(1)
-            break
-        
-        if time.time() - start_time > timeout:
-            break
-    
-    return url
+    return "http://localhost:5173"
 
 
 def main():
@@ -65,9 +52,9 @@ def main():
     frontend_dir = Path(__file__).resolve().parent.parent.parent / "frontend"
     
     print("\n=== CourseForge ===")
-    print("Waiting for Vite dev server...")
+    print("Starting Vite dev server...")
     
-    # Wait for Vite to start
+    # Start Vite and wait a bit
     url = wait_for_vite(frontend_dir)
     print(f"Frontend ready at: {url}")
     

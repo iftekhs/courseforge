@@ -25,23 +25,22 @@ export function CourseCard({ course, onRemove }: CourseCardProps) {
   };
 
   return (
-    <Card 
-      className="cursor-pointer transition-colors"
+    <Card
+      className="cursor-pointer transition-colors shadow-none"
       onClick={() => navigate(`/courses/${course.id}`)}
     >
       <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-2">
         <div className="flex items-center gap-2">
           <div className="bg-slate-50 p-2 rounded-lg">
-            <HugeiconsIcon icon={FolderIcon} className="h-5 w-5 text-slate-600" />
+            <HugeiconsIcon
+              icon={FolderIcon}
+              className="h-5 w-5 text-slate-600"
+            />
           </div>
           <CardTitle className="text-base">{course.name}</CardTitle>
         </div>
         {onRemove && (
-          <Button
-            size="icon-sm"
-            variant="ghost"
-            onClick={handleRemove}
-          >
+          <Button size="icon-sm" variant="ghost" onClick={handleRemove}>
             <HugeiconsIcon icon={DeleteIcon} className="h-4 w-4 text-red-500" />
           </Button>
         )}
@@ -49,7 +48,8 @@ export function CourseCard({ course, onRemove }: CourseCardProps) {
       <CardContent>
         <div className="flex items-center justify-between">
           <span className="text-sm text-muted-foreground">
-            {course.lesson_count} {course.lesson_count === 1 ? 'lesson' : 'lessons'}
+            {course.lesson_count}{' '}
+            {course.lesson_count === 1 ? 'lesson' : 'lessons'}
           </span>
           <Button
             size="icon-sm"

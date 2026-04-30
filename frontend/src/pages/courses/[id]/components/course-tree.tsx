@@ -1,6 +1,9 @@
-import { useMemo } from 'react';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { FolderIcon, ChevronDown, ChevronRight, CheckmarkCircle01Icon } from '@hugeicons/core-free-icons';
+import {
+  FolderIcon,
+  ChevronDown,
+  ChevronRight,
+} from '@hugeicons/core-free-icons';
 import { useTreeState } from './course-tree-context';
 import { useProgress } from './progress-context';
 import type { TreeNode } from '../../hooks/use-courses-api';
@@ -14,19 +17,34 @@ interface TreeNodeProps {
 const CheckmarkIcon = () => (
   <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none">
     <circle cx="8" cy="8" r="7" fill="#1D9E75" />
-    <path d="M4.5 8L7 10.5L11.5 5.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M4.5 8L7 10.5L11.5 5.5"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
 const HollowCircleIcon = () => (
   <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none">
-    <circle cx="8" cy="8" r="7" stroke="#9CA3AF" strokeWidth="1.5" fill="none" className="group-hover:fill-green-500/10 transition-colors" />
+    <circle
+      cx="8"
+      cy="8"
+      r="7"
+      stroke="#9CA3AF"
+      strokeWidth="1.5"
+      fill="none"
+      className="group-hover:fill-green-500/10 transition-colors"
+    />
   </svg>
 );
 
 export function CourseTree({ node, onPlay, level = 0 }: TreeNodeProps) {
   const { isNodeExpanded, toggleNode } = useTreeState();
-  const { getLessonState, toggleLessonComplete, getFolderCount } = useProgress();
+  const { getLessonState, toggleLessonComplete, getFolderCount } =
+    useProgress();
 
   const hasChildren = node.children && node.children.length > 0;
   const nodeId = node.id || '';
@@ -65,11 +83,7 @@ export function CourseTree({ node, onPlay, level = 0 }: TreeNodeProps) {
           className="h-4 w-4 shrink-0 flex items-center justify-center"
           onClick={handleIconClick}
         >
-          {completed ? (
-            <CheckmarkIcon />
-          ) : (
-            <HollowCircleIcon />
-          )}
+          {completed ? <CheckmarkIcon /> : <HollowCircleIcon />}
         </button>
         <span className="text-sm truncate flex-1">{node.name}</span>
       </div>
@@ -77,8 +91,12 @@ export function CourseTree({ node, onPlay, level = 0 }: TreeNodeProps) {
   }
 
   const folderCount = getFolderCount(node.id, node);
-  const percent = folderCount.total > 0 ? Math.round((folderCount.completed / folderCount.total) * 100) : 0;
-  const isDone = folderCount.completed === folderCount.total && folderCount.total > 0;
+  const percent =
+    folderCount.total > 0
+      ? Math.round((folderCount.completed / folderCount.total) * 100)
+      : 0;
+  const isDone =
+    folderCount.completed === folderCount.total && folderCount.total > 0;
 
   return (
     <div>
@@ -101,12 +119,17 @@ export function CourseTree({ node, onPlay, level = 0 }: TreeNodeProps) {
         {isDone ? (
           <CheckmarkIcon />
         ) : (
-          <HugeiconsIcon icon={FolderIcon} className="h-4 w-4 text-slate-500 shrink-0" />
+          <HugeiconsIcon
+            icon={FolderIcon}
+            className="h-4 w-4 text-muted-foreground shrink-0"
+          />
         )}
         <span className="text-sm font-medium truncate flex-1">{node.name}</span>
-        
+
         {folderCount.total > 0 && (
-          <div className={`text-xs px-2 py-0.5 rounded-full ${isDone ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+          <div
+            className={`text-xs px-2 py-0.5 rounded-full ${isDone ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-muted-foreground'}`}
+          >
             <span>{folderCount.completed}</span>
             <span className="mx-1">/</span>
             <span>{folderCount.total}</span>

@@ -18,22 +18,17 @@ if not DATA_FILE.exists():
     if ALT_FILE.exists():
         DATA_FILE = ALT_FILE
 
-print(f"[API] Data file: {DATA_FILE}")
-
 _window: Optional[any] = None
 
 
 def _load_courses() -> list[dict]:
     if not DATA_FILE.exists():
-        print("[DATA] File does not exist")
         return []
     try:
         with open(DATA_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-            print(f"[DATA] Loaded {len(data)} items from file")
             return data if isinstance(data, list) else []
-    except Exception as e:
-        print(f"[DATA] Error loading: {e}")
+    except Exception:
         return []
 
 
@@ -44,10 +39,6 @@ def _save_courses(courses: list[dict]):
 
 def _get_course_summary(course_dict: dict) -> dict:
     try:
-        course_id = course_dict.get("id", "NO-ID")
-        course_name = course_dict.get("name", "NO-NAME")
-        print(f"[SUMMARY] Processing course: {course_name} ({course_id})")
-        
         tree = course_dict.get("tree", {})
         if tree:
             count = 0
@@ -62,50 +53,25 @@ def _get_course_summary(course_dict: dict) -> dict:
         else:
             lesson_count = 0
             
-        print(f"[SUMMARY] {course_name} has {lesson_count} lessons")
-        
-        result = {
-            "id": course_id,
-            "name": course_name,
+        return {
+            "id": course_dict.get("id", ""),
+            "name": course_dict.get("name", ""),
             "root_path": course_dict.get("root_path", ""),
             "lesson_count": lesson_count
         }
-        print(f"[SUMMARY] Result: {result}")
-        return result
-        
-    except Exception as e:
-        print(f"[SUMMARY] Error: {e}")
-        import traceback
-        traceback.print_exc()
+    except Exception:
         return {"id": "error", "name": "error", "root_path": "", "lesson_count": 0}
 
 
 class CourseAPI:
     def get_courses(self) -> list[dict]:
-        print("[API] get_courses called (sync)")
         try:
             courses = _load_courses()
-            result = [_get_course_summary(c) for c in courses]
-            print(f"[API] Returning {len(result)} courses")
-            return result
-        except Exception as e:
-            print(f"[API] Error: {e}")
+            return [_get_course_summary(c) for c in courses]
+        except Exception:
             return []
     
-    async def get_courses_async(self) -> list[dict]:
-        print("[API] get_courses_async called")
-        try:
-            courses = _load_courses()
-            result = [_get_course_summary(c) for c in courses]
-            print(f"[API] Returning {len(result)} courses")
-            return result
-        except Exception as e:
-            print(f"[API] Error: {e}")
-            return []
-
     def add_course(self, folder_path: str = "") -> dict:
-        print(f"[API] add_course called with: {folder_path}")
-        
         if not folder_path:
             return {"error": "No folder path provided"}
         
@@ -113,8 +79,6 @@ class CourseAPI:
         
         if not root.exists() or not root.is_dir():
             return {"error": "Invalid folder"}
-        
-        print(f"[API] Scanning folder: {folder_path}")
         
         try:
             tree = scan_folder(root)
@@ -132,8 +96,6 @@ class CourseAPI:
             courses.append(course_data)
             _save_courses(courses)
             
-            print(f"[API] Course added: {course_data['name']}")
-            
             return {
                 "id": course_data["id"],
                 "name": course_data["name"],
@@ -141,15 +103,19 @@ class CourseAPI:
                 "lesson_count": lesson_count
             }
         except Exception as e:
-            print(f"[API] Error: {e}")
-            import traceback
-            traceback.print_exc()
+            return {"error": str(e)}
+
+    def remove_course(self, course_id: str) -> dict:
+        try:
+            courses = _load_courses()
+            courses = [c for c in courses if c.get("id") != course_id]
+            _save_courses(courses)
+            return {"status": "ok"}
+        except Exception as e:
             return {"error": str(e)}
 
     def open_folder_dialog(self) -> dict:
         global _window
-        
-        print("[API] open_folder_dialog called")
         
         if not _window:
             return {"error": "No window"}
@@ -160,18 +126,14 @@ class CourseAPI:
                 directory=""
             )
             
-            print(f"[API] Dialog result: {result}")
-            
             if not result or len(result) == 0:
                 return {"error": "No folder selected"}
             
             return {"folder_path": result[0]}
         except Exception as e:
-            print(f"[API] Dialog error: {e}")
             return {"error": str(e)}
 
     def get_course(self, course_id: str) -> dict:
-        print(f"[API] get_course called: {course_id}")
         courses = _load_courses()
         for c in courses:
             if c["id"] == course_id:
@@ -196,13 +158,11 @@ class CourseAPI:
         global _window
         if _window:
             try:
-                print("[API] Refreshing page...")
                 _window.evaluate_js('window.location.reload()')
-            except Exception as e:
-                print(f"[API] Error refreshing: {e}")
+            except Exception:
+                pass
 
 
 def _set_window(window: any):
     global _window
     _window = window
-    print(f"[API] Window set: {window}")
