@@ -3,6 +3,7 @@ import { useSearchParams, useNavigate, useParams } from 'react-router-dom';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { ArrowLeftIcon, ArrowRight02Icon, Link01Icon, CheckmarkCircle01Icon } from '@hugeicons/core-free-icons';
 import { Button } from '@/components/ui/button';
+import VideoPlayer from '@/components/ui/video-player';
 import { usePreferences } from '../../../settings/hooks/use-preferences';
 import { useLessonProgress } from '../../hooks/use-lesson-progress';
 import { useCourses } from '../../hooks/use-courses-api';
@@ -141,21 +142,7 @@ export default function CoursePlayPage() {
       </div>
 
       <div className="w-full max-w-4xl mx-auto">
-        <video
-          src={videoSrc}
-          controls
-          className="w-full rounded-lg bg-black"
-          style={{ maxHeight: '70vh' }}
-          onLoadedData={() => setLoading(false)}
-          onError={() => setLoading(false)}
-        >
-          Your browser does not support video playback.
-        </video>
-        {loading && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <p>Loading video...</p>
-          </div>
-        )}
+        <VideoPlayer key={path} src={videoSrc} title={lessonTitle} />
 
         <div className="mt-4 text-left">
           <h2 className="text-xl font-semibold capitalize">{lessonTitle}</h2>
